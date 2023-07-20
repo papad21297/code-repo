@@ -1,0 +1,28 @@
+mkdir ex01&&cd ex01&&touch print_groups.sh&&echo -e '#!/bin/bash\ngroups $FT_USER | tr " " "," | tr -d "\\n"' > print_groups.sh&&cd ..
+
+mkdir ex02&&cd ex02&&touch find_sh.sh&&echo -e '#!/bin/bash\nfind . -type f -name "*.sh" | rev | cut -d "/" -f 1 | cut -d "." -f 2 | rev' > find_sh.sh&&cd ..
+
+mkdir ex03&&cd ex03&&touch count_files.sh&&echo -e '#!/bin/bash\nfind . | wc -l | sed "s/ //g"' > count_files.sh&&cd ..
+(replace double quote with single quote in `"s/ //g"`)
+
+mkdir ex04&&cd ex04&&touch MAC.sh&&echo -e '#!/bin/bash\nifconfig | grep ether | cut -c 8- | rev | cut -c 2- | rev' > MAC.sh&&cd ..
+(around `cut -c 8- | rev | cut -c 2-` 8 and 2 may should be replace 15 and 30 to get more correct result according to terminal at home)
+
+mkdir ex05&&cd ex05&&touch "\"\\?\$\*'MaRViN'\*\$?\\\""&&ls -lRa *MaRV* | cat -e&&cd ..
+
+mkdir ex06&&cd ex06&&touch skip.sh&&echo -e '#!/bin/bash\nls -l | awk "NR%2"' > skip.sh&&cd ..
+(replace double quote with single quote in `"NR%2"`)
+
+mkdir ex07&&cd ex07&&touch r_dwssap.sh&&echo -e '#!/bin/bash\n<content>' > r_dwssap.sh&&cd ..
+(
+	where content of the shell file is as following: ```sh
+cat /etc/passwd | grep -v "^#" | awk 'NR%2==0' | cut -d ':' -f 1 | rev | sort -r | head -n $FT_LINE2 | tail -n $(($FT_LINE2-$FT_LINE1+1)) | tr "\n" ", " | sed s/,$/./ | tr -d "\n"
+	```
+)
+
+mkdir ex08&&cd ex08&&touch add_chelou.sh&&echo -e '#!/bin/bash\n<content>' > add_chelou.sh&&cd ..
+(
+	where content of the shell file is as following: ```sh
+echo $FT_NBR1 + $FT_NBR2 | sed "s/\\/1/g" | sed "s/?/3/g" | sed "s/!/4/g" | sed "s/\'/0/g" | sed "s/\"/2/g" | tr "mrdoc" "01234" | xargs echo "ibase=5; obase=23;" | bc | tr "0123456789ABC" "gtaio luSnemf"
+	```
+)

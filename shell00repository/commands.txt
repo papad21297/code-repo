@@ -14,12 +14,12 @@ mkdir ex03&&cd ex03&&cat ~/.ssh/id_rsa.pub > id_rsa_pub&&cd ..
 
 mkdir ex04&&cd ex04&&echo "ls -Upmt" > midLS&&cd ..
 
-mkdir ex05&&cd ex05&&echo "#!/bin/bash\ngit log --pretty=tformat:"%H" -5" > git_commit.sh&&cd ..
+mkdir ex05&&cd ex05&&echo -e '#!/bin/bash\ngit log --pretty=tformat:"%H" -5' -5" > git_commit.sh&&cd ..
 
-mkdir ex06&&cd ex06&&echo "#!/bin/bash\ngit check-ignore *" > git_ignore.sh&&cd ..
+mkdir ex06&&cd ex06&&echo -e '#!/bin/bash\ngit check-ignore *' > git_ignore.sh&&cd ..
 
 mkdir ex07&&cp ../resources/a ex07/b&&patch ex07/b ../resources/sw.diff
 
-mkdir ex08&&cd ex08&&echo "find . -type f \( -name "#*#" -or -name "*~" \) -print -delete" > clean&&cd ..
+mkdir ex08&&cd ex08&&echo -e 'find . -type f \( -name "#*#" -or -name "*~" \) -print -delete' > clean&&cd ..
 
 mkdir ex09&&cd ex09&&touch ft_magic&&echo "42	string	42	42 file"&&cd ..
