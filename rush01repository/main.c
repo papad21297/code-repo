@@ -14,6 +14,6 @@
 
 int main(void)
 {
-    print("hi, from github remote vscode!")
+    print("hi, from github remote vscode!");
     return (0);
 }
