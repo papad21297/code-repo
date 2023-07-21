@@ -1,7 +1,0 @@
-- get commit message: ```
-clear&&python3 ../time.py
-```
-
-- compilation of C code updated from committing and pusing to git: ```
-clear&&git pull&&cc -Wall -Wextra -Werror rush01repository/main.c -o rush01repository/main.o&&rush01repository/main.o | cat -e
-```
