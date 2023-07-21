@@ -1,3 +1,0 @@
-- get commit message: ```
-date +"%Y%m%d_%T" | tr : .
-```

@@ -1,0 +1,8 @@
+- get commit message: ```
+date +"%Y%m%d_%T" | tr : .
+```
+
+- compilation of C code updated from committing and pusing to git: ```
+git pull
+
+```
