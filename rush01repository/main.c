@@ -14,6 +14,13 @@
 
 int main(void)
 {
-    print("hi, from github remote vscode!");
+    int i;
+
+    i = 0;
+    while (i < 10)
+    {
+        printf("%d\n", i);
+        i++;
+    }
     return (0);
 }
