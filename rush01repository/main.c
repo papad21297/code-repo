@@ -12,6 +12,8 @@
 
 #include <stdio.h>
 
+void rush01(void);
+
 int main(void)
 {
     int i;
@@ -22,5 +24,6 @@ int main(void)
         printf("%d\n", i);
         i++;
     }
+    rush01();
     return (0);
 }
