@@ -27,6 +27,7 @@ int		bckwrd_prmttion_mmber_itration(int arr[], int size);
 int		count_word_in_string(const char *input);
 int		lnstr(const char *input);
 void	browse_int_array(int arr[], int n);
+void	browse_outer_loop(int **matrix, int size, int n);
 
 int	main(int argc, char *argv[])
 {
@@ -47,8 +48,8 @@ int	main(int argc, char *argv[])
 			cond_arr[1] = argv[1][((n * 3) + i) * 2] - 48;
 			printf("%c => ... <= %c\n", argv[1][((n * 2) + i) * 2],
 				argv[1][((n * 3) + i) * 2]);
-			permutation_iteration(n, permutation_amount(n), cond_arr,
-				ptr_amount);
+			browse_outer_loop(permutation_iteration(n, permutation_amount(n), cond_arr,
+				ptr_amount))
 			printf("[%d]\n", amount);
 			printf("\n");
 			i++;
@@ -91,9 +92,9 @@ int	**permutation_iteration(int n, int formation_number, int cond_arr[],
 				== bckwrd_prmttion_mmber_itration(val_arr, n)))
 		{
 			amount++;
-			printf("- ");
-			browse_int_array(val_arr, n);
-			printf("\n");
+			// printf("- ");
+			// browse_int_array(val_arr, n);
+			// printf("\n");
 		}
 		i++;
 	}
@@ -226,6 +227,20 @@ void	browse_int_array(int arr[], int n)
 	while (i < n)
 	{
 		printf("%d", arr[i]);
+		i++;
+	}
+}
+
+void	browse_outer_loop(int **matrix, int size, int n)
+{
+	int i;
+
+	i = 0;
+	while (i < size)
+	{
+		printf("[%d] - \"", i);
+		browse_int_array(matrix[i], 4);
+		printf("\"\n")
 		i++;
 	}
 }
