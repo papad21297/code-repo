@@ -78,6 +78,7 @@ void	itrate_lft_to_rght_lne(int n, char *argv)
 	// int **ptr_arr_arr;
 	int i;
 
+	arr_arr = NULL;
 	arr_arr_size = (int *)malloc(n * sizeof(int));
 	candidates_collected = 0;
 	i = 0;
