@@ -51,7 +51,7 @@ int	main(int argc, char *argv[])
 			permutation_iteration(n, permutation_amount(n), cond_arr,
 				ptr_amount);
 			browse_outer_loop(permutation_iteration(n, permutation_amount(n), cond_arr,
-				ptr_amount), amount, n);
+				ptr_amount)[i], amount, n);
 			printf("[%d]\n", amount);
 			printf("\n");
 			i++;
