@@ -125,7 +125,7 @@ void prmttion_mmber_itration(int arr[], int size)
 			tallst_mmbr = arr[i];
 			tallst_found++;
 		}
-		printf("%d, ", arr[i]);
+		printf("%d", arr[i]);
 		i++;
 	}
 }
