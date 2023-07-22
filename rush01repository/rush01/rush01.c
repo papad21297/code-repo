@@ -11,10 +11,12 @@
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int		permutation_amount(int n);
 void	permutation_iteration(int n, int formation_number);
 void	index_to_placement_conversion(int n, int i);
+int*	fill_up_value_options(int n);
 
 int	main(void)
 {
@@ -56,7 +58,10 @@ void	index_to_placement_conversion(int n, int i)
 {
 	int	function_i;
 	int	capacity;
+	int	*valueOptionsArray;
 
+	valueOptionsArray = fill_up_value_options(n);
+	// valueOptionsArray = (int*)malloc(n * sizeof(int));
 	capacity = permutation_amount(n);
 	function_i = 0;
 	while (function_i < n)
@@ -66,4 +71,13 @@ void	index_to_placement_conversion(int n, int i)
 		i %= capacity;
 		function_i++;
 	}
+}
+
+int*	fill_up_value_options(int n)
+{
+	int	*arr;
+	int	i;
+
+	i = 0;
+	arr = NULL;
 }
