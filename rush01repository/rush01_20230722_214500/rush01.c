@@ -1,7 +1,12 @@
 #include <stdio.h>
 
-int main(void)
+int main(int argc, char *argv[])
 {
-    printf("Hello, World!...\n");
+    if ((argc - 1) == 1)
+    {
+        printf("your first and only argument is \"%s\"", argv[1 + 1]);
+    }
+	else
+		printf("the number of your argument(s) isn't exactly 1")
     return (0);
 }
