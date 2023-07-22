@@ -18,7 +18,7 @@
 int		permutation_amount(int n);
 void	permutation_iteration(int n, int formation_number);
 void	index_to_placement_conversion(int n, int i);
-int*	fill_up_value_options(int n);
+int		*fill_up_value_options(int n);
 void	remove_and_shift(int arr[], int size, int index_to_remove);
 
 int	main(void)
@@ -61,39 +61,39 @@ void	index_to_placement_conversion(int n, int i)
 {
 	int	function_i;
 	int	capacity;
-	int	*valueOptionsArray;
+	int	*val_options_arr;
 
-	valueOptionsArray = fill_up_value_options(n);
+	val_options_arr = fill_up_value_options(n);
 	capacity = permutation_amount(n);
 	function_i = 0;
 	while (function_i < n)
 	{
 		capacity /= n - function_i;
-		printf("%d", valueOptionsArray[(i - (i % capacity)) / capacity]);
-		remove_and_shift(valueOptionsArray, n, (i - (i % capacity)) / capacity);
+		printf("%d", val_options_arr[(i - (i % capacity)) / capacity]);
+		remove_and_shift(val_options_arr, n, (i - (i % capacity)) / capacity);
 		i %= capacity;
 		function_i++;
 	}
 }
 
-int*	fill_up_value_options(int n)
+int	*fill_up_value_options(int n)
 {
 	int	*arr;
 	int	i;
 
 	i = 0;
-	arr = (int*)malloc(n * sizeof(int));
+	arr = (int *)malloc(n * sizeof(int));
 	while (i < n)
 	{
 		arr[i] = i + 1;
 		i++;
 	}
-	return arr;
+	return (arr);
 }
 
 void	remove_and_shift(int arr[], int size, int index_to_remove)
 {
-	int i;
+	int	i;
 
 	i = index_to_remove;
 	while (i < (size - 1))
