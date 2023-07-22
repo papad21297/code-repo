@@ -112,12 +112,12 @@ void	itrate_lft_to_rght_lne(int n, char *argv)
 		i++;
 	}
 	printf("\narr_arr's members: x%d\n", candidates_collected);
-	// i = 0;
-	// while (i < candidates_collected)
-	// {
-	// 	printf("- #%d: %d\n", i, arr_arr[i]);
-	// 	i++;
-	// }
+	i = 0;
+	while (i < candidates_collected)
+	{
+		printf("- #%d: %d\n", i, arr_arr[i]);
+		i++;
+	}
 }
 
 void	filter_candidates(int i, int *ptr_canddte_amount)
