@@ -104,7 +104,7 @@ void	filter_candidates(int i, int *ptr_canddte_amount)
 		343, 2401, 16807, 117649, 823543 };
 	while (_i < 17)
 	{
-		if (candidacy_array[_i] % candidacy_volume[_i] == 0)
+		if (candidacy_array[_i] % candidacy_volume[i] == 0)
 			printf("%d\n", candidacy_array[_i]);
 		_i++;
 	}
