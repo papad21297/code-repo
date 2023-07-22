@@ -72,7 +72,7 @@ void	index_to_placement_conversion(int *val_arr, int n, int i)
 	{
 		capacity /= n - function_i;
 		printf(">>> %d", val_options_arr[(i - (i % capacity)) / capacity]);
-		val_arr[function_i] = function_i * 2;
+		val_arr[function_i] = val_options_arr[(i - (i % capacity)) / capacity];
 		remove_and_shift(val_options_arr, n, (i - (i % capacity)) / capacity);
 		i %= capacity;
 		function_i++;
