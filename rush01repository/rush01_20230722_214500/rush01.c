@@ -7,6 +7,6 @@ int main(int argc, char *argv[])
         printf("your first and only argument is \"%s\"", argv[1 + 1]);
     }
 	else
-		printf("the number of your argument(s) isn't exactly 1")
+		printf("the number of your argument(s) isn't exactly 1");
     return (0);
 }
