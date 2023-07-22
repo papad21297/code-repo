@@ -77,7 +77,6 @@ void	itrate_lft_to_rght_lne(int n, char *argv)
 	int candidates_collected;
 	// int **ptr_arr_arr;
 	int i;
-	int j;
 
 	arr_arr = NULL;
 	arr_arr_size = (int *)malloc(n * sizeof(int));
@@ -104,12 +103,12 @@ void	itrate_lft_to_rght_lne(int n, char *argv)
 		i++;
 	}
 	printf("\narr_arr's members: x%d\n", candidates_collected);
-	i = 0;
-	while (i < candidates_collected)
-	{
-		printf("- #%d: %d\n", i, arr_arr[i]);
-		i++;
-	}
+	// i = 0;
+	// while (i < candidates_collected)
+	// {
+	// 	printf("- #%d: %d\n", i, arr_arr[i]);
+	// 	i++;
+	// }
 }
 
 void	filter_candidates(int i, int *ptr_canddte_amount)
@@ -141,7 +140,7 @@ int	*collect_candidates(int candidate_amount, int i, int *ptr_arr_arr)
 	_i = 0;
 	while (_i < candidate_amount)
 	{
-		printf("%d, ", ptr_arr_arr[_i]);
+		new_arr_arr[_i] = _i;
 		// new_arr_arr[_i] = ptr_arr_arr[_i];
 		_i++;
 	}
@@ -153,8 +152,8 @@ int	*collect_candidates(int candidate_amount, int i, int *ptr_arr_arr)
 		{
 			// ptr_arr_arr[candidate_amount + matching_found] = candidacy_array[_i];
 			// new_arr_arr[candidate_amount + matching_found] = candidacy_array[_i];
-			// printf("candidacy_array[%d]: \"%d\"\n", candidate_amount + matching_found,
-			// 	candidacy_array[_i]);
+			printf("candidacy_array[%d]: \"%d\"\n", candidate_amount + matching_found,
+				candidacy_array[_i]);
 			matching_found++;
 		}
 		_i++;
