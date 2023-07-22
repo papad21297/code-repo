@@ -80,10 +80,14 @@ void	permutation_iteration(int n, int formation_number, int lft, int rght)
 	while (i < formation_number)
 	{
 		index_to_placement_conversion(val_arr, n, i);
-		printf("[%d] %d => ... <= %d", i,
+		if (
 			(lft == prmttion_mmber_itration(val_arr, n)),
-			(rght == bckwrd_prmttion_mmber_itration(val_arr, n)));
+			&& (rght == bckwrd_prmttion_mmber_itration(val_arr, n))
+		)
+		{
+			printf("[%d] ...", i);
 		printf("\n");
+		}
 		i++;
 	}
 }
