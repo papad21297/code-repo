@@ -27,8 +27,8 @@ void	permutation_iteration(int n, int formation_number, int lft, int rght);
 void	index_to_placement_conversion(int *val_arr, int n, int i);
 int		*fill_up_value_options(int n);
 void	remove_and_shift(int arr[], int size, int index_to_remove);
-void	prmttion_mmber_itration(int arr[], int size);
-void	bckwrd_prmttion_mmber_itration(int arr[], int size);
+int	prmttion_mmber_itration(int arr[], int size);
+int	bckwrd_prmttion_mmber_itration(int arr[], int size);
 // char	**split_string_by_space(const char *input);
 int		count_word_in_string(const char *input);
 int		lnstr(const char *input);
@@ -79,10 +79,9 @@ void	permutation_iteration(int n, int formation_number, int lft, int rght)
 	i = 0;
 	while (i < formation_number)
 	{
-		printf("[%d] ", i);
 		index_to_placement_conversion(val_arr, n, i);
-		prmttion_mmber_itration(val_arr, n);
-		bckwrd_prmttion_mmber_itration(val_arr, n);
+		printf("[%d] %d => ... <= %d", i, prmttion_mmber_itration(val_arr, n),
+			bckwrd_prmttion_mmber_itration(val_arr, n));
 		printf("\n");
 		i++;
 	}
@@ -135,7 +134,7 @@ void	remove_and_shift(int arr[], int size, int index_to_remove)
 	size--;
 }
 
-void	prmttion_mmber_itration(int arr[], int size)
+int	prmttion_mmber_itration(int arr[], int size)
 {
 	int	tallst_mmbr;
 	int	tallst_found;
@@ -154,10 +153,11 @@ void	prmttion_mmber_itration(int arr[], int size)
 		// printf("%d", arr[i]);
 		i++;
 	}
+	return (tallst_found);
 	// printf(" %d => ...", tallst_found);
 }
 
-void	bckwrd_prmttion_mmber_itration(int arr[], int size)
+int	bckwrd_prmttion_mmber_itration(int arr[], int size)
 {
 	int	tallst_mmbr;
 	int	tallst_found;
@@ -175,6 +175,7 @@ void	bckwrd_prmttion_mmber_itration(int arr[], int size)
 		}
 		i++;
 	}
+	return (tallst_found);
 	// printf(" <= %d", tallst_found);
 }
 
