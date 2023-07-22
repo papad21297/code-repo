@@ -140,7 +140,6 @@ int	*collect_candidates(int candidate_amount, int i, int *ptr_arr_arr)
 {
 	int	*new_arr_arr;
 	int	_i;
-	int	matching_found;
 	int	candidacy_volume[4] = { 3, 5, 2, 7 };
 	int	candidacy_array[17] = { 3, 9, 27, 5, 25, 125, 625, 3125, 2, 4, 7, 49,
 		343, 2401, 16807, 117649, 823543 };
@@ -154,7 +153,6 @@ int	*collect_candidates(int candidate_amount, int i, int *ptr_arr_arr)
 		_i++;
 	}
 	_i = 0;
-	matching_found = 0;
 	while (_i < 17)
 	{
 		if (candidacy_array[_i] % candidacy_volume[i] == 0)
@@ -163,10 +161,9 @@ int	*collect_candidates(int candidate_amount, int i, int *ptr_arr_arr)
 			// new_arr_arr[candidate_amount + matching_found] = candidacy_array[_i];
 			if (_i == candidate_amount)
 			{
-				printf("candidacy_array[%d]: \"%d\"\n", candidate_amount + matching_found,
+				printf("candidacy_array[%d]: \"%d\"\n", candidate_amount,
 					candidacy_array[_i]);
 			}
-			matching_found++;
 		}
 		_i++;
 	}
