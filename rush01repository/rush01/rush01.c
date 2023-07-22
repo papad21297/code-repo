@@ -108,11 +108,11 @@ void	remove_and_shift(int arr[], int size, int index_to_remove)
 	size--;
 }
 
-void prmttion_mmber_itration(int arr[], int size)
+void	prmttion_mmber_itration(int arr[], int size)
 {
-	int tallst_mmbr;
-	int tallst_found;
-	int i;
+	int	tallst_mmbr;
+	int	tallst_found;
+	int	i;
 
 	tallst_mmbr = 0;
 	tallst_found = 0;
@@ -130,11 +130,11 @@ void prmttion_mmber_itration(int arr[], int size)
 	printf(" %d => ...", tallst_found);
 }
 
-void bckwrd_prmttion_mmber_itration(int arr[], int size)
+void	bckwrd_prmttion_mmber_itration(int arr[], int size)
 {
-	int tallst_mmbr;
-	int tallst_found;
-	int i;
+	int	tallst_mmbr;
+	int	tallst_found;
+	int	i;
 
 	tallst_mmbr = 0;
 	tallst_found = 0;
