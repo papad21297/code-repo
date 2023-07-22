@@ -34,15 +34,17 @@ int	main(int argc, char *argv[])
 
 	n = 4;
 	if ((argc - 1) == 1)
-		printf("%s\n", argv[1]);
-	while (i < n)
 	{
-		printf("%c => ... <= %c\n", argv[1][((n * 2) + i) * 2],
-			argv[1][((n * 3) + i) * 2]);
-		permutation_iteration(n, permutation_amount(n),
-			argv[1][((n * 2) + i) * 2] - 48, argv[1][((n * 3) + i) * 2] - 48);
-		printf("\n");
-		i++;
+		printf("%s\n", argv[1]);
+		while (i < n)
+		{
+			printf("%c => ... <= %c\n", argv[1][((n * 2) + i) * 2],
+				argv[1][((n * 3) + i) * 2]);
+			permutation_iteration(n, permutation_amount(n),
+				argv[1][((n * 2) + i) * 2] - 48, argv[1][((n * 3) + i) * 2] - 48);
+			printf("\n");
+			i++;
+		}
 	}
 }
 
@@ -63,16 +65,19 @@ int	permutation_amount(int n)
 
 void	permutation_iteration(int n, int formation_number, int lft, int rght)
 {
+	int	**matrix;
 	int amount;
 	int	*val_arr;
 	int	i;
 
+	matrix = (int **)malloc(formation_number * sizeof(int *));
 	amount = 0;
 	val_arr = (int *)malloc(n * sizeof(int));
 	i = 0;
 	while (i < formation_number)
 	{
 		index_to_placement_conversion(val_arr, n, i);
+		matrix[i] = val_arr;
 		if (
 			(lft == prmttion_mmber_itration(val_arr, n))
 			&& (rght == bckwrd_prmttion_mmber_itration(val_arr, n))
