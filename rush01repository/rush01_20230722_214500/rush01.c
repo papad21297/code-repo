@@ -88,5 +88,6 @@ void	itrate_lft_to_rght_lne(int n, char *argv)
 	while (i < n)
 	{
 		printf("- %d\n", arr_arr_size[i]);
+		i++;
 	}
 }
