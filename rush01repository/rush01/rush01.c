@@ -46,7 +46,8 @@ int	main(int argc, char *argv[])
 		printf("%s\n", argv[1]);
 		while (i < n)
 		{
-			printf("%c => ... <= %c", argv[1][(n * 2) + i], argv[1][(n * 3) + i]);
+			printf("%c => ... <= %c\n", argv[1][((n * 2) + i) * 2],
+				argv[1][((n * 3) + i) * 2]);
 			i++;
 		}
 }
