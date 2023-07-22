@@ -174,11 +174,11 @@ int	bckwrd_prmttion_mmber_itration(int arr[], int size)
 	return (tallst_found);
 }
 
-int count_word_in_string(const char *input)
+int	count_word_in_string(const char *input)
 {
 	int	str_len;
 	int	word_count;
-	
+
 	str_len = 0;
 	word_count = 1;
 	while (input[str_len] != '\0')
@@ -190,10 +190,10 @@ int count_word_in_string(const char *input)
 	return (word_count);
 }
 
-int lnstr(const char *input)
+int	lnstr(const char *input)
 {
-	int str_len;
-	
+	int	str_len;
+
 	str_len = 0;
 	while (input[str_len] != '\0')
 	{
@@ -204,7 +204,7 @@ int lnstr(const char *input)
 
 void	browse_int_array(int arr[], int n)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < n)
