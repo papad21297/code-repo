@@ -82,7 +82,7 @@ void	permutation_iteration(int n, int formation_number, int lft, int rght)
 		index_to_placement_conversion(val_arr, n, i);
 		printf("[%d] %d => ... <= %d", i,
 			(lft == prmttion_mmber_itration(val_arr, n)),
-			(rght == bckwrd_prmttion_mmber_itration(val_arr, n));
+			(rght == bckwrd_prmttion_mmber_itration(val_arr, n)));
 		printf("\n");
 		i++;
 	}
