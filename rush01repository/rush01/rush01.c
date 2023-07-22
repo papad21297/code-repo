@@ -32,6 +32,7 @@ int	main(int argc, char *argv[])
 {
 	int	amount;
 	int	*ptr_amount;
+	int cond_arr[];
 	int	n;
 	int	i;
 
@@ -42,10 +43,11 @@ int	main(int argc, char *argv[])
 		printf("%s\n", argv[1]);
 		while (i < n)
 		{
+			cond_arr[0] = argv[1][((n * 2) + i) * 2] - 48;
+			cond_arr[1] = argv[1][((n * 2) + i) * 2] - 48;
 			printf("%c => ... <= %c\n", argv[1][((n * 2) + i) * 2],
 				argv[1][((n * 3) + i) * 2]);
-			permutation_iteration(n, permutation_amount(n), [(argv[1][((n * 2)
-					+ i) * 2] - 48), (argv[1][((n * 3) + i) * 2] - 48)],
+			permutation_iteration(n, permutation_amount(n), cond_arr,
 					ptr_amount);
 			printf("[%d]\n", amount);
 			printf("\n");
