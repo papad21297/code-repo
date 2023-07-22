@@ -246,5 +246,6 @@ void	browse_int_array(int arr[], int n)
 	while (i < n)
 	{
 		printf("%d", arr[i]);
+		i++;
 	}
 }
