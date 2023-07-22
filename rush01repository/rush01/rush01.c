@@ -18,7 +18,7 @@
 
 int		permutation_amount(int n);
 int		**permutation_iteration(int n, int formation_number, int cond_arr[],
-	int	*ptr_amount);
+int *ptr_amount);
 void	index_to_placement_conversion(int *val_arr, int n, int i);
 int		*fill_up_value_options(int n);
 void	remove_and_shift(int arr[], int size, int index_to_remove);
@@ -32,7 +32,7 @@ int	main(int argc, char *argv[])
 {
 	int	amount;
 	int	*ptr_amount;
-	int cond_arr[2];
+	int	cond_arr[2];
 	int	n;
 	int	i;
 
@@ -48,7 +48,7 @@ int	main(int argc, char *argv[])
 			printf("%c => ... <= %c\n", argv[1][((n * 2) + i) * 2],
 				argv[1][((n * 3) + i) * 2]);
 			permutation_iteration(n, permutation_amount(n), cond_arr,
-					ptr_amount);
+				ptr_amount);
 			printf("[%d]\n", amount);
 			printf("\n");
 			i++;
