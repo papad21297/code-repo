@@ -31,20 +31,20 @@ void	browse_int_array(int arr[], int n);
 int	main(int argc, char *argv[])
 {
 	int	n;
-	int i;
+	int	i;
 
 	n = 4;
 	if ((argc - 1) == 1)
 		printf("%s\n", argv[1]);
-		while (i < n)
-		{
-			printf("%c => ... <= %c\n", argv[1][((n * 2) + i) * 2],
-				argv[1][((n * 3) + i) * 2]);
-			permutation_iteration(n, permutation_amount(n),
-				argv[1][((n * 2) + i) * 2] - 48, argv[1][((n * 3) + i) * 2] - 48);
-			printf("\n");
-			i++;
-		}
+	while (i < n)
+	{
+		printf("%c => ... <= %c\n", argv[1][((n * 2) + i) * 2],
+			argv[1][((n * 3) + i) * 2]);
+		permutation_iteration(n, permutation_amount(n),
+			argv[1][((n * 2) + i) * 2] - 48, argv[1][((n * 3) + i) * 2] - 48);
+		printf("\n");
+		i++;
+	}
 }
 
 int	permutation_amount(int n)
@@ -148,11 +148,9 @@ int	prmttion_mmber_itration(int arr[], int size)
 			tallst_mmbr = arr[i];
 			tallst_found++;
 		}
-		// printf("%d", arr[i]);
 		i++;
 	}
 	return (tallst_found);
-	// printf(" %d => ...", tallst_found);
 }
 
 int	bckwrd_prmttion_mmber_itration(int arr[], int size)
@@ -176,30 +174,6 @@ int	bckwrd_prmttion_mmber_itration(int arr[], int size)
 	return (tallst_found);
 	// printf(" <= %d", tallst_found);
 }
-
-
-// char	**split_string_by_space(const char *input)
-// {
-// 	char	**warr;
-// 	int 	word_start;
-// 	int		wdidx;
-// 	int		i;
-// 	int		word_len;
-	
-// 	warr = (char **)malloc(count_word_in_string(input) * sizeof(char *));
-// 	word_start = 0;
-// 	wdidx = 0;
-// 	i = 0;
-// 	while (i < lnstr(input))
-// 	{
-// 		if (input[i] == ' ' || input[i] == '\0')
-// 		{
-// 			int wordLen = i - word_start;
-// 			warr[wdidx] = (char *)malloc((lnstr(input) + 1) * sizeof(char));
-// 		}
-// 		i++;
-// 	}
-// }
 
 int count_word_in_string(const char *input)
 {
