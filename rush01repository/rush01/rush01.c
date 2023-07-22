@@ -146,7 +146,6 @@ void bckwrd_prmttion_mmber_itration(int arr[], int size)
 			tallst_mmbr = arr[size - (i + 1)];
 			tallst_found++;
 		}
-		printf("%d, ", arr[size - (i + 1)]);
 		i++;
 	}
 	printf(" <= %d", tallst_found);
