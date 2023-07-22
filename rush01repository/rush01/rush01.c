@@ -122,7 +122,7 @@ void prmttion_mmber_itration(int arr[], int size)
 	printf("and down: ");
 	while (i < size)
 	{
-		printf("%d, ", arr[size - i]);
+		printf("%d, ", arr[size - (i + 1)]);
 		i++;
 	}
 }
