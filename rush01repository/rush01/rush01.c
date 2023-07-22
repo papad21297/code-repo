@@ -19,6 +19,7 @@ void	index_to_placement_conversion(int *val_arr, int n, int i);
 int		*fill_up_value_options(int n);
 void	remove_and_shift(int arr[], int size, int index_to_remove);
 void	prmttion_mmber_itration(int arr[], int size);
+void	bckwrd_prmttion_mmber_itration(int arr[], int size);
 
 int	main(void)
 {
@@ -53,8 +54,10 @@ void	permutation_iteration(int n, int formation_number)
 	while (i < formation_number)
 	{
 		index_to_placement_conversion(val_arr, n, i);
-		printf("[%d]", i);
+		printf("[%d] go up: ", i);
 		prmttion_mmber_itration(val_arr, n);
+		printf("and down: ", i);
+		bckwrd_prmttion_mmber_itration(val_arr, n);
 		printf("\n");
 		i++;
 	}
@@ -112,14 +115,18 @@ void prmttion_mmber_itration(int arr[], int size)
 	int i;
 
 	i = 0;
-	printf("go up: ");
 	while (i < size)
 	{
 		printf("%d, ", arr[i]);
 		i++;
 	}
+}
+
+void bckwrd_prmttion_mmber_itration(int arr[], int size)
+{
+	int i;
+
 	i = 0;
-	printf("and down: ");
 	while (i < size)
 	{
 		printf("%d, ", arr[size - (i + 1)]);
