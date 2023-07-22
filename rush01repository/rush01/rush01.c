@@ -172,13 +172,12 @@ int	bckwrd_prmttion_mmber_itration(int arr[], int size)
 		i++;
 	}
 	return (tallst_found);
-	// printf(" <= %d", tallst_found);
 }
 
 int count_word_in_string(const char *input)
 {
-	int str_len;
-	int word_count;
+	int	str_len;
+	int	word_count;
 	
 	str_len = 0;
 	word_count = 1;
