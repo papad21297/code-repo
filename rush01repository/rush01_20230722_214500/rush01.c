@@ -43,24 +43,38 @@
      3241
      3412
 
-*/
-
-int main(void)
-{
 	int r = 8, c = 10;
-
 	int* ptr = malloc((r * c) * sizeof(int));
-
 	for (int i = 0; i < r * c; i++)
 		ptr[i] = i + 1;
-
 	for (int i = 0; i < r; i++) {
 		for (int j = 0; j < c; j++)
 			printf("%d ", ptr[i * c + j]);
 		printf("\n");
 	}
-
 	free(ptr);
+*/
 
+void	itrate_lft_to_rght_lne(int n, char *argv);
+
+int main(int argc, char *argv[])
+{
+	int n;
+
+	n = 4;
+	if ((argc - 1) == 1)
+		itrate_lft_to_rght_lne(n, argv[0 + 1]);
 	return 0;
+}
+
+void	itrate_lft_to_rght_lne(int n, char *argv)
+{
+	int i;
+
+	i = 0;
+	while (i < n)
+	{
+		printf("%d\n", i);
+		i++;
+	}
 }
