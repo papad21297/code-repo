@@ -92,8 +92,8 @@ void	itrate_lft_to_rght_lne(int n, char *argv)
 		j = 0;
 		while (j < candidate_amount)
 		{
-			arr_arr = collect_candidates(candidates_collected + j, i, arr_arr);
 			printf("j_%d, ", j);
+			arr_arr = collect_candidates(candidates_collected + j, i, arr_arr);
 			j++;
 		}
 		printf("\n");
