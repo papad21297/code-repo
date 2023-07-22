@@ -53,6 +53,7 @@ void	permutation_iteration(int n, int formation_number)
 	while (i < formation_number)
 	{
 		index_to_placement_conversion(val_arr, n, i);
+		prmttion_mmber_itration(val_arr, n);
 		printf("[%d]\n", i);
 		i++;
 	}
@@ -76,7 +77,6 @@ void	index_to_placement_conversion(int *val_arr, int n, int i)
 		i %= capacity;
 		function_i++;
 	}
-	prmttion_mmber_itration(val_options_arr, n);
 }
 
 int	*fill_up_value_options(int n)
