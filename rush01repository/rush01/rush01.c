@@ -52,7 +52,7 @@ void	permutation_iteration(int n, int formation_number)
 	while (i < formation_number)
 	{
 		index_to_placement_conversion(val_arr, n, i);
-		printf("\n");
+		printf("[%d]\n", i);
 		i++;
 	}
 }
