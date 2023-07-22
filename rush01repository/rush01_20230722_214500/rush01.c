@@ -101,13 +101,13 @@ void	itrate_lft_to_rght_lne(int n, char *argv)
 		printf("- %d\n", arr_arr_size[i]);
 		i++;
 	}
-	printf("\narr_arr's members:\n");
-	i = 0;
-	while (i < candidate_amount)
-	{
-		printf("- %d\n", arr_arr[i]);
-		i++;
-	}
+	printf("\narr_arr's members: x%d\n", candidate_amount);
+	// i = 0;
+	// while (i < candidate_amount)
+	// {
+	// 	printf("- %d\n", arr_arr[i]);
+	// 	i++;
+	// }
 }
 
 void	filter_candidates(int i, int *ptr_canddte_amount)
