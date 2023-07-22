@@ -48,8 +48,10 @@ int	main(int argc, char *argv[])
 			cond_arr[1] = argv[1][((n * 3) + i) * 2] - 48;
 			printf("%c => ... <= %c\n", argv[1][((n * 2) + i) * 2],
 				argv[1][((n * 3) + i) * 2]);
+			permutation_iteration(n, permutation_amount(n), cond_arr,
+				ptr_amount);
 			browse_outer_loop(permutation_iteration(n, permutation_amount(n), cond_arr,
-				ptr_amount))
+				ptr_amount), amount, n);
 			printf("[%d]\n", amount);
 			printf("\n");
 			i++;
