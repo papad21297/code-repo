@@ -27,11 +27,12 @@ void	permutation_iteration(int n, int formation_number, int lft, int rght);
 void	index_to_placement_conversion(int *val_arr, int n, int i);
 int		*fill_up_value_options(int n);
 void	remove_and_shift(int arr[], int size, int index_to_remove);
-int	prmttion_mmber_itration(int arr[], int size);
-int	bckwrd_prmttion_mmber_itration(int arr[], int size);
+int		prmttion_mmber_itration(int arr[], int size);
+int		bckwrd_prmttion_mmber_itration(int arr[], int size);
 // char	**split_string_by_space(const char *input);
 int		count_word_in_string(const char *input);
 int		lnstr(const char *input);
+void	browse_int_array(int arr[], int n);
 
 int	main(int argc, char *argv[])
 {
@@ -86,6 +87,7 @@ void	permutation_iteration(int n, int formation_number, int lft, int rght)
 		)
 		{
 			printf("[%d] ...", i);
+			browse_int_array(val_arr, n);
 			printf("\n");
 		}
 		i++;
@@ -234,4 +236,15 @@ int lnstr(const char *input)
 		str_len++;
 	}
 	return (str_len);
+}
+
+void	browse_int_array(int arr[], int n)
+{
+	int i;
+
+	i = 0;
+	while (i < n)
+	{
+		printf("%d", arr[i]);
+	}
 }
