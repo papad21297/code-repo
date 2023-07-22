@@ -49,7 +49,7 @@ int	main(int argc, char *argv[])
 			printf("%c => ... <= %c\n", argv[1][((n * 2) + i) * 2],
 				argv[1][((n * 3) + i) * 2]);
 			permutation_iteration(n, permutation_amount(n),
-				argv[1][((n * 2) + i) * 2], argv[1][((n * 3) + i) * 2]);
+				argv[1][((n * 2) + i) * 2] - 48, argv[1][((n * 3) + i) * 2] - 48);
 			printf("\n");
 			i++;
 		}
