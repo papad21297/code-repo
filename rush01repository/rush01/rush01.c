@@ -117,7 +117,6 @@ void prmttion_mmber_itration(int arr[], int size)
 	tallst_mmbr = 0;
 	tallst_found = 0;
 	i = 0;
-	printf("%d => ", tallst_found);
 	while (i < size)
 	{
 		if (arr[i] > tallst_mmbr)
@@ -128,6 +127,7 @@ void prmttion_mmber_itration(int arr[], int size)
 		printf("%d", arr[i]);
 		i++;
 	}
+	printf(" %d => ...", tallst_found);
 }
 
 void bckwrd_prmttion_mmber_itration(int arr[], int size)
