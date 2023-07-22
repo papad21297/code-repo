@@ -115,5 +115,6 @@ void prmttion_mmber_itration(int arr[], int size)
 	while (i < size)
 	{
 		printf("%d, ", arr[i]);
+		i++;
 	}
 }
