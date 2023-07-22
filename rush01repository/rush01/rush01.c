@@ -30,7 +30,7 @@ void	remove_and_shift(int arr[], int size, int index_to_remove);
 void	prmttion_mmber_itration(int arr[], int size);
 void	bckwrd_prmttion_mmber_itration(int arr[], int size);
 
-int	main(int argc, char **argv)
+int	main(int argc, char *argv[])
 {
 	/*
 	int	n;
@@ -38,7 +38,8 @@ int	main(int argc, char **argv)
 	n = 4;
 	permutation_iteration(n, permutation_amount(n));
 	*/
-	printf("%d", argc);
+	if ((argc - 1) == 1)
+		printf("%s\n", argv[1]);
 }
 
 int	permutation_amount(int n)
