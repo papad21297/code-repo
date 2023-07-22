@@ -31,6 +31,7 @@ void	browse_outer_loop(int **matrix, int size, int n);
 
 int	main(int argc, char *argv[])
 {
+	int **matrix;
 	int	amount;
 	int	*ptr_amount;
 	int	cond_arr[2];
@@ -48,10 +49,9 @@ int	main(int argc, char *argv[])
 			cond_arr[1] = argv[1][((n * 3) + i) * 2] - 48;
 			printf("%c => ... <= %c\n", argv[1][((n * 2) + i) * 2],
 				argv[1][((n * 3) + i) * 2]);
-			permutation_iteration(n, permutation_amount(n), cond_arr,
+			matrix = permutation_iteration(n, permutation_amount(n), cond_arr,
 				ptr_amount);
-			browse_int_array(*permutation_iteration(n, permutation_amount(n), cond_arr,
-				ptr_amount)[0], 4);
+			browse_int_array(matrix[i][0], 4);
 			printf("[%d]\n", amount);
 			printf("\n");
 			i++;
