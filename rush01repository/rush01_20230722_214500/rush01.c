@@ -69,12 +69,13 @@ int main(int argc, char *argv[])
 
 void	itrate_lft_to_rght_lne(int n, char *argv)
 {
+	int candidacy_volume[4] = { 3, 5, 2, 7 };
 	int i;
 
 	i = 0;
 	while (i < n)
 	{
-		printf("#%d %d => ???? <= %d\n", i + 1, argv[(4 * n) + (2 * i)] - 48,
+		printf("#%d %d => ???? <= %d\n", candidacy_volume[i], argv[(4 * n) + (2 * i)] - 48,
 			argv[(6 * n) + (2 * i)] - 48);
 		printf("\n");
 		i++;
