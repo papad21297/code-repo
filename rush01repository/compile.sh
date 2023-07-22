@@ -1,4 +1,10 @@
 #!/bin/bash
+# cls&&%LOCALAPPDATA%\Programs\Python\
+# Python311\python.exe
+# %USERPROFILE%\Downloads\material\folder_for_
+# python_works\copy_current_date_and_time_
+# to_clipboard\copy_current_date_and_time_
+# to_clipboard.py
 clear;
 git pull;
 # ~/.local/bin/norminette -R CheckForbiddenSourceHeader;
