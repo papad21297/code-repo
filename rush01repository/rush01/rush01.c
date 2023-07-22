@@ -82,10 +82,10 @@ void	permutation_iteration(int n, int formation_number, int lft, int rght)
 		if ((lft == prmttion_mmber_itration(val_arr, n))
 			&& (rght == bckwrd_prmttion_mmber_itration(val_arr, n)))
 		{
-			index_to_placement_conversion(val_arr, n, i);
-			prmttion_mmber_itration(val_arr, n);
-			bckwrd_prmttion_mmber_itration(val_arr, n);
-			printf("\n");
+			// index_to_placement_conversion(val_arr, n, i);
+			// prmttion_mmber_itration(val_arr, n);
+			// bckwrd_prmttion_mmber_itration(val_arr, n);
+			printf(">\n");
 		}
 		i++;
 	}
