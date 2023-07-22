@@ -101,7 +101,7 @@ void	itrate_lft_to_rght_lne(int n, char *argv)
 		printf("- %d\n", arr_arr_size[i]);
 		i++;
 	}
-	printf("\narr_arr's members: x%d\n", candidate_amount);
+	printf("\narr_arr's members: x%d\n", candidates_collected);
 	// i = 0;
 	// while (i < candidate_amount)
 	// {
