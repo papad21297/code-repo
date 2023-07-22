@@ -42,13 +42,13 @@ int	main(int argc, char *argv[])
 	int i;
 
 	n = 4;
-	while (i < (n * n))
-	{
-		printf("%d", argv[1][i * 2]);
-		i++;
-	}
 	if ((argc - 1) == 1)
 		printf("%s\n", argv[1]);
+		while (i < (n * n))
+		{
+			printf("'%c', ", argv[1][i * 2]);
+			i++;
+		}
 }
 
 int	permutation_amount(int n)
