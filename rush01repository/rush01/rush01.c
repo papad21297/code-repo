@@ -10,6 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+ 4321
+412341
+323412
+234122
+141232
+ 1222
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -21,12 +30,15 @@ void	remove_and_shift(int arr[], int size, int index_to_remove);
 void	prmttion_mmber_itration(int arr[], int size);
 void	bckwrd_prmttion_mmber_itration(int arr[], int size);
 
-int	main(void)
+int	main(int argc, char **argv)
 {
+	/*
 	int	n;
 
 	n = 4;
 	permutation_iteration(n, permutation_amount(n));
+	*/
+	printf("%d", argc);
 }
 
 int	permutation_amount(int n)
