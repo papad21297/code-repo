@@ -132,7 +132,7 @@ void	collect_candidates(int candidate_amount, int i, int **ptr_arr_arr)
 	{
 		if (candidacy_array[_i] % candidacy_volume[i] == 0)
 		{
-			printf("candidacy_array[%d]: \"%d\"\n", candidate_amount + _i,
+			printf("candidacy_array[%d]: \"%d\"\n", candidate_amount + matching_found,
 				candidacy_array[_i]);
 			matching_found++;
 		}
