@@ -1,4 +1,4 @@
-cd /Desktop/cpiscine/piscine_repository_folders_collection/july-piscine;
+cd ~/Desktop/cpiscine/piscine_repository_folders_collection/july-piscine;
 git add .;
 now=$(date +'%Y.%m.%d %H:%M:%S');
 git commit -m "${now}";
