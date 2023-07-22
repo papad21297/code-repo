@@ -54,9 +54,7 @@ void	permutation_iteration(int n, int formation_number)
 	while (i < formation_number)
 	{
 		index_to_placement_conversion(val_arr, n, i);
-		printf("[%d] go up: ", i);
 		prmttion_mmber_itration(val_arr, n);
-		printf("and down: ", i);
 		bckwrd_prmttion_mmber_itration(val_arr, n);
 		printf("\n");
 		i++;
@@ -119,6 +117,7 @@ void prmttion_mmber_itration(int arr[], int size)
 	tallst_mmbr = 0;
 	tallst_found = 0;
 	i = 0;
+	printf("%d => ", tallst_found);
 	while (i < size)
 	{
 		if (arr[i] > tallst_mmbr)
@@ -129,7 +128,6 @@ void prmttion_mmber_itration(int arr[], int size)
 		printf("%d, ", arr[i]);
 		i++;
 	}
-	printf("tallst_found: \"%d\", ", tallst_found);
 }
 
 void bckwrd_prmttion_mmber_itration(int arr[], int size)
@@ -151,5 +149,5 @@ void bckwrd_prmttion_mmber_itration(int arr[], int size)
 		printf("%d, ", arr[size - (i + 1)]);
 		i++;
 	}
-	printf("tallst_found: \"%d\", ", tallst_found);
+	printf(" <= %d", tallst_found);
 }
