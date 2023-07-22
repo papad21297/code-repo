@@ -112,14 +112,24 @@ void	remove_and_shift(int arr[], int size, int index_to_remove)
 
 void prmttion_mmber_itration(int arr[], int size)
 {
+	int tallst_mmbr;
+	int tallst_found;
 	int i;
 
+	tallst_mmbr = 0;
+	tallst_found = 0;
 	i = 0;
 	while (i < size)
 	{
+		if (arr[i] > tallst_mmbr)
+		{
+			tallst_mmbr = arr[i];
+			tallst_found++;
+		}
 		printf("%d, ", arr[i]);
 		i++;
 	}
+	printf("tallst_found: \"%d\"", tallst_found);
 }
 
 void bckwrd_prmttion_mmber_itration(int arr[], int size)
