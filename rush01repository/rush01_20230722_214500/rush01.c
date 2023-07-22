@@ -148,7 +148,7 @@ int	*collect_candidates(int candidate_amount, int i, int *ptr_arr_arr)
 	_i = 0;
 	while (_i < candidate_amount)
 	{
-		new_arr_arr[_i] = _i;
+		// new_arr_arr[_i] = _i;
 		// new_arr_arr[_i] = ptr_arr_arr[_i];
 		_i++;
 	}
