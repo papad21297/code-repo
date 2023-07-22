@@ -11,12 +11,6 @@
 /* ************************************************************************** */
 
 /*
- 4321
-412341
-323412
-234122
-141232
- 1222
 */
 
 #include <stdio.h>
@@ -36,9 +30,6 @@ void	browse_int_array(int arr[], int n);
 
 int	main(int argc, char *argv[])
 {
-	/*
-	permutation_iteration(n, permutation_amount(n));
-	*/
 	int	n;
 	int i;
 
