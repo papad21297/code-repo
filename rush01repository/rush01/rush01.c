@@ -47,7 +47,7 @@ int	main(int argc, char *argv[])
 			permutation_iteration(n, permutation_amount(n), argv[1][((n * 2)
 					+ i) * 2] - 48, argv[1][((n * 3) + i) * 2] - 48,
 					ptr_amount);
-			printf("[%d]\n", amount)
+			printf("[%d]\n", amount);
 			printf("\n");
 			i++;
 		}
