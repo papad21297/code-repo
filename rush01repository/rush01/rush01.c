@@ -18,6 +18,7 @@ void	permutation_iteration(int n, int formation_number);
 void	index_to_placement_conversion(int *val_arr, int n, int i);
 int		*fill_up_value_options(int n);
 void	remove_and_shift(int arr[], int size, int index_to_remove);
+void	prmttion_mmber_itration(int arr[], int size);
 
 int	main(void)
 {
@@ -75,6 +76,7 @@ void	index_to_placement_conversion(int *val_arr, int n, int i)
 		i %= capacity;
 		function_i++;
 	}
+	prmttion_mmber_itration(val_options_arr);
 }
 
 int	*fill_up_value_options(int n)
@@ -103,4 +105,15 @@ void	remove_and_shift(int arr[], int size, int index_to_remove)
 		i++;
 	}
 	size--;
+}
+
+void prmttion_mmber_itration(int arr[], int size)
+{
+	int i;
+
+	i = 0;
+	while (i < size)
+	{
+		printf("%d, ", arr[i]);
+	}
 }
