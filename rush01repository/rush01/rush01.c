@@ -157,7 +157,6 @@ int	prmttion_mmber_itration(int arr[], int size)
 		printf("%d", arr[i]);
 		i++;
 	}
-	printf(" %d => ...", tallst_found);
 	return (tallst_found);
 }
 
@@ -179,7 +178,6 @@ int	bckwrd_prmttion_mmber_itration(int arr[], int size)
 		}
 		i++;
 	}
-	printf(" <= %d", tallst_found);
 	return (tallst_found);
 }
 
