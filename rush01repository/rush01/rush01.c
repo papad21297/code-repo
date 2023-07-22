@@ -29,7 +29,7 @@ int		*fill_up_value_options(int n);
 void	remove_and_shift(int arr[], int size, int index_to_remove);
 void	prmttion_mmber_itration(int arr[], int size);
 void	bckwrd_prmttion_mmber_itration(int arr[], int size);
-char	**split_string_by_space(const char *input);
+// char	**split_string_by_space(const char *input);
 int		count_word_in_string(const char *input);
 int		lnstr(const char *input);
 
@@ -168,28 +168,28 @@ void	bckwrd_prmttion_mmber_itration(int arr[], int size)
 }
 
 
-char	**split_string_by_space(const char *input)
-{
-	char	**warr;
-	int 	word_start;
-	int		wdidx;
-	int		i;
-	int		word_len;
+// char	**split_string_by_space(const char *input)
+// {
+// 	char	**warr;
+// 	int 	word_start;
+// 	int		wdidx;
+// 	int		i;
+// 	int		word_len;
 	
-	warr = (char **)malloc(count_word_in_string(input) * sizeof(char *));
-	word_start = 0;
-	wdidx = 0;
-	i = 0;
-	while (i < lnstr(input))
-	{
-		if (input[i] == ' ' || input[i] == '\0')
-		{
-			int wordLen = i - word_start;
-			warr[wdidx] = (char *)malloc((lnstr(input) + 1) * sizeof(char));
-		}
-		i++;
-	}
-}
+// 	warr = (char **)malloc(count_word_in_string(input) * sizeof(char *));
+// 	word_start = 0;
+// 	wdidx = 0;
+// 	i = 0;
+// 	while (i < lnstr(input))
+// 	{
+// 		if (input[i] == ' ' || input[i] == '\0')
+// 		{
+// 			int wordLen = i - word_start;
+// 			warr[wdidx] = (char *)malloc((lnstr(input) + 1) * sizeof(char));
+// 		}
+// 		i++;
+// 	}
+// }
 
 int count_word_in_string(const char *input)
 {
