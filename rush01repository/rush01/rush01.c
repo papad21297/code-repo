@@ -53,8 +53,9 @@ void	permutation_iteration(int n, int formation_number)
 	while (i < formation_number)
 	{
 		index_to_placement_conversion(val_arr, n, i);
-		printf("[%d]\n", i);
+		printf("[%d]", i);
 		prmttion_mmber_itration(val_arr, n);
+		printf("\n");
 		i++;
 	}
 }
@@ -111,9 +112,16 @@ void prmttion_mmber_itration(int arr[], int size)
 	int i;
 
 	i = 0;
+	printf("go up: ");
 	while (i < size)
 	{
 		printf("%d, ", arr[i]);
+		i++;
+	}
+	printf("and down: ");
+	while (i < size)
+	{
+		printf("%d, ", arr[size - i]);
 		i++;
 	}
 }
