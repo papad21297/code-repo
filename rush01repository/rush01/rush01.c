@@ -76,7 +76,7 @@ void	index_to_placement_conversion(int *val_arr, int n, int i)
 		i %= capacity;
 		function_i++;
 	}
-	prmttion_mmber_itration(val_options_arr);
+	prmttion_mmber_itration(val_options_arr, n);
 }
 
 int	*fill_up_value_options(int n)
