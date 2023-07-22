@@ -47,11 +47,11 @@ void	permutation_iteration(int n, int formation_number)
 	int	*val_arr;
 	int	i;
 
-	val_arr = (int *)malloc(size * sizeof(int));
+	val_arr = (int *)malloc(n * sizeof(int));
 	i = 0;
 	while (i < formation_number)
 	{
-		index_to_placement_conversion(int *val_arr, n, i);
+		index_to_placement_conversion(val_arr, n, i);
 		printf("\n");
 		i++;
 	}
