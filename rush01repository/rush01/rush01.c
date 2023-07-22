@@ -30,8 +30,8 @@ void	remove_and_shift(int arr[], int size, int index_to_remove);
 void	prmttion_mmber_itration(int arr[], int size);
 void	bckwrd_prmttion_mmber_itration(int arr[], int size);
 char	**split_string_by_space(const char *input);
-int		count_word_in_string(const char *input)
-int		lnstr(const char *input)
+int		count_word_in_string(const char *input);
+int		lnstr(const char *input);
 
 int	main(int argc, char *argv[])
 {
@@ -168,7 +168,7 @@ void	bckwrd_prmttion_mmber_itration(int arr[], int size)
 }
 
 
-char	**split_string_by_space(const char *input, int *num_words)
+char	**split_string_by_space(const char *input)
 {
 	char	**warr;
 	int 	word_start;
@@ -184,14 +184,14 @@ char	**split_string_by_space(const char *input, int *num_words)
 	{
 		if (input[i] == ' ' || input[i] == '\0')
 		{
-			int wordLen = i - wordStart;
+			int wordLen = i - word_start;
 			warr[wdidx] = (char *)malloc((lnstr(input) + 1) * sizeof(char));
 		}
 		i++;
 	}
 }
 
-count_word_in_string(const char *input)
+int count_word_in_string(const char *input)
 {
 	int str_len;
 	int word_count;
@@ -207,7 +207,7 @@ count_word_in_string(const char *input)
 	return (word_count);
 }
 
-lnstr(const char *input)
+int lnstr(const char *input)
 {
 	int str_len;
 	
