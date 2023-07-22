@@ -240,7 +240,7 @@ void	browse_outer_loop(int **matrix, int size, int n)
 	{
 		printf("[%d] - \"", i);
 		browse_int_array(matrix[i], 4);
-		printf("\"\n")
+		printf("\"\n");
 		i++;
 	}
 }
