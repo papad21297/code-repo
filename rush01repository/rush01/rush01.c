@@ -17,8 +17,8 @@
 #include <stdlib.h>
 
 int		permutation_amount(int n);
-int		**permutation_iteration(int n, int formation_number, int cond_arr[],
-		int *ptr_amount);
+int		**permutation_iteration(
+	int n, int formation_number, int cond_arr[], int *ptr_amount);
 void	index_to_placement_conversion(int *val_arr, int n, int i);
 int		*fill_up_value_options(int n);
 void	remove_and_shift(int arr[], int size, int index_to_remove);
