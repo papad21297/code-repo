@@ -140,7 +140,7 @@ int	*collect_candidates(int candidate_amount, int i, int *ptr_arr_arr)
 	_i = 0;
 	while (_i < candidate_amount)
 	{
-		new_arr_arr[_i] = _i;
+		printf("%d, ", ptr_arr_arr[_i]);
 		// new_arr_arr[_i] = ptr_arr_arr[_i];
 		_i++;
 	}
@@ -152,8 +152,8 @@ int	*collect_candidates(int candidate_amount, int i, int *ptr_arr_arr)
 		{
 			// ptr_arr_arr[candidate_amount + matching_found] = candidacy_array[_i];
 			// new_arr_arr[candidate_amount + matching_found] = candidacy_array[_i];
-			printf("candidacy_array[%d]: \"%d\"\n", candidate_amount + matching_found,
-				candidacy_array[_i]);
+			// printf("candidacy_array[%d]: \"%d\"\n", candidate_amount + matching_found,
+			// 	candidacy_array[_i]);
 			matching_found++;
 		}
 		_i++;
