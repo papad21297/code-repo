@@ -29,17 +29,20 @@ int		*fill_up_value_options(int n);
 void	remove_and_shift(int arr[], int size, int index_to_remove);
 void	prmttion_mmber_itration(int arr[], int size);
 void	bckwrd_prmttion_mmber_itration(int arr[], int size);
+char	**split_string_by_space(const char *input);
+int		count_word_in_string(const char *input)
+int		lnstr(const char *input)
 
 int	main(int argc, char *argv[])
 {
 	/*
+	*/
 	int	n;
 
-	n = 4;
-	permutation_iteration(n, permutation_amount(n));
-	*/
 	if ((argc - 1) == 1)
 		printf("%s\n", argv[1]);
+	n = 4;
+	permutation_iteration(n, permutation_amount(n));
 }
 
 int	permutation_amount(int n)
@@ -162,4 +165,56 @@ void	bckwrd_prmttion_mmber_itration(int arr[], int size)
 		i++;
 	}
 	printf(" <= %d", tallst_found);
+}
+
+
+char	**split_string_by_space(const char *input, int *num_words)
+{
+	char	**warr;
+	int 	word_start;
+	int		wdidx;
+	int		i;
+	int		word_len;
+	
+	warr = (char **)malloc(count_word_in_string(input) * sizeof(char *));
+	word_start = 0;
+	wdidx = 0;
+	i = 0;
+	while (i < lnstr(input))
+	{
+		if (input[i] == ' ' || input[i] == '\0')
+		{
+			int wordLen = i - wordStart;
+			warr[wdidx] = (char *)malloc((lnstr(input) + 1) * sizeof(char));
+		}
+		i++;
+	}
+}
+
+count_word_in_string(const char *input)
+{
+	int str_len;
+	int word_count;
+	
+	str_len = 0;
+	word_count = 1;
+	while (input[str_len] != '\0')
+	{
+		if (input[str_len] == ' ')
+			word_count++;
+		str_len++;
+	}
+	return (word_count);
+}
+
+lnstr(const char *input)
+{
+	int str_len;
+	
+	str_len = 0;
+	while (input[str_len] != '\0')
+	{
+		str_len++;
+	}
+	return (str_len);
 }
