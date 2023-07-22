@@ -102,6 +102,7 @@ void	filter_candidates(int i, int *ptr_canddte_amount)
 	int candidacy_volume[4] = { 3, 5, 2, 7 };
 	int candidacy_array[17] = { 3, 9, 27, 5, 25, 125, 625, 3125, 2, 4, 7, 49,
 		343, 2401, 16807, 117649, 823543 };
+	_i = 0;
 	while (_i < 17)
 	{
 		if (candidacy_array[_i] % candidacy_volume[i] == 0)
