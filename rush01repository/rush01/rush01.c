@@ -50,6 +50,8 @@ int	main(int argc, char *argv[])
 				argv[1][((n * 3) + i) * 2]);
 			permutation_iteration(n, permutation_amount(n), cond_arr,
 				ptr_amount);
+			browse_int_array(&permutation_iteration(n, permutation_amount(n), cond_arr,
+				ptr_amount)[0], 4);
 			printf("[%d]\n", amount);
 			printf("\n");
 			i++;
