@@ -79,6 +79,7 @@ void	permutation_iteration(int n, int formation_number, int lft, int rght)
 	i = 0;
 	while (i < formation_number)
 	{
+		printf("[%d] ", i)
 		index_to_placement_conversion(val_arr, n, i);
 		prmttion_mmber_itration(val_arr, n);
 		bckwrd_prmttion_mmber_itration(val_arr, n);
