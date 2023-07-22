@@ -86,7 +86,7 @@ void	permutation_iteration(int n, int formation_number, int lft, int rght)
 			&& (rght == bckwrd_prmttion_mmber_itration(val_arr, n))
 		)
 		{
-			printf("- ", i);
+			printf("- ");
 			browse_int_array(val_arr, n);
 			printf("\n");
 		}
