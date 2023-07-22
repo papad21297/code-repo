@@ -89,9 +89,9 @@ int	**permutation_iteration(int n, int formation_number, int lft, int rght,
 				== bckwrd_prmttion_mmber_itration(val_arr, n)))
 		{
 			amount++;
-			// printf("- ");
-			// browse_int_array(val_arr, n);
-			// printf("\n");
+			printf("- ");
+			browse_int_array(val_arr, n);
+			printf("\n");
 		}
 		i++;
 	}
