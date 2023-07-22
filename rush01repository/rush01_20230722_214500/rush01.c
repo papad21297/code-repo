@@ -128,7 +128,7 @@ int	*collect_candidates(int candidate_amount, int i, int *ptr_arr_arr)
 	int	candidacy_array[17] = { 3, 9, 27, 5, 25, 125, 625, 3125, 2, 4, 7, 49,
 		343, 2401, 16807, 117649, 823543 };
 	
-	new_arr_arr = (int *)malloc((candidate_amount + 1) * sizeof(int))
+	new_arr_arr = (int *)malloc((candidate_amount + 1) * sizeof(int));
 	_i = 0;
 	while (_i < candidate_amount)
 	{
@@ -149,5 +149,5 @@ int	*collect_candidates(int candidate_amount, int i, int *ptr_arr_arr)
 		}
 		_i++;
 	}
-	return (new_arr_arr)
+	return (new_arr_arr);
 }
