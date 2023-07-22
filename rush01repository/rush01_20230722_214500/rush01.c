@@ -57,7 +57,7 @@
 
 void	itrate_lft_to_rght_lne(int n, char *argv);
 void	filter_candidates(int i, int *ptr_canddte_amount);
-void	collect_candidates(int candidate_amount, int i, int *ptr_arr_arr);
+int		*collect_candidates(int candidate_amount, int i, int *ptr_arr_arr);
 
 int main(int argc, char *argv[])
 {
@@ -84,10 +84,9 @@ void	itrate_lft_to_rght_lne(int n, char *argv)
 	while (i < n)
 	{
 		filter_candidates(i, &candidate_amount);
-		arr_arr = NULL;
 		// arr_arr = (int *)malloc(candidate_amount * sizeof(int));
 		// ptr_arr_arr = &arr_arr;
-		collect_candidates(candidates_collected, i, arr_arr);
+		arr_arr = collect_candidates(candidates_collected, i, arr_arr);
 		candidates_collected += candidate_amount;
 		arr_arr_size[i] = candidate_amount;
 		printf("#%d %d => ???? <= %d\n", i, argv[(4 * n) + (2 * i)] - 48,
@@ -120,13 +119,22 @@ void	filter_candidates(int i, int *ptr_canddte_amount)
 	*ptr_canddte_amount = candidacy_volume[i];
 }
 
-void	collect_candidates(int candidate_amount, int i, int *ptr_arr_arr)
+int	*collect_candidates(int candidate_amount, int i, int *ptr_arr_arr)
 {
-	int _i;
-	int matching_found;
-	int candidacy_volume[4] = { 3, 5, 2, 7 };
-	int candidacy_array[17] = { 3, 9, 27, 5, 25, 125, 625, 3125, 2, 4, 7, 49,
+	int	*new_arr_arr;
+	int	_i;
+	int	matching_found;
+	int	candidacy_volume[4] = { 3, 5, 2, 7 };
+	int	candidacy_array[17] = { 3, 9, 27, 5, 25, 125, 625, 3125, 2, 4, 7, 49,
 		343, 2401, 16807, 117649, 823543 };
+	
+	new_arr_arr = (int *)malloc((candidate_amount + 1) * sizeof(int))
+	_i = 0;
+	while (_i < candidate_amount)
+	{
+		new_arr_arr[_i] = ptr_arr_arr[_i];
+		_i++;
+	}
 	_i = 0;
 	matching_found = 0;
 	while (_i < 17)
@@ -134,10 +142,12 @@ void	collect_candidates(int candidate_amount, int i, int *ptr_arr_arr)
 		if (candidacy_array[_i] % candidacy_volume[i] == 0)
 		{
 			// ptr_arr_arr[candidate_amount + matching_found] = candidacy_array[_i];
+			new_arr_arr[candidate_amount] = candidacy_array[_i];
 			printf("candidacy_array[%d]: \"%d\"\n", candidate_amount + matching_found,
 				candidacy_array[_i]);
 			matching_found++;
 		}
 		_i++;
 	}
+	return (new_arr_arr)
 }
