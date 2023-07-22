@@ -72,7 +72,7 @@ void	itrate_lft_to_rght_lne(int n, char *argv)
 {
 	int *arr_arr_size;
 	int candidate_amount;
-	int *ptr_canddte_amount;
+	// int *ptr_canddte_amount;
 	// int	*arr_arr;
 	int i;
 
@@ -80,8 +80,8 @@ void	itrate_lft_to_rght_lne(int n, char *argv)
 	i = 0;
 	while (i < n)
 	{
-		ptr_canddte_amount = &candidate_amount;
-		filter_candidates(i, ptr_canddte_amount);
+		// ptr_canddte_amount = &candidate_amount;
+		filter_candidates(i, &candidate_amount);
 		arr_arr_size[i] = candidate_amount;
 		// arr_arr = (int *)malloc(filter_candidates(i) * sizeof(int));
 		printf("#%d %d => ???? <= %d\n", i, argv[(4 * n) + (2 * i)] - 48,
