@@ -74,8 +74,8 @@ void	itrate_lft_to_rght_lne(int n, char *argv)
 	i = 0;
 	while (i < n)
 	{
-		printf("#%d %d => ???? <= %d\n", i + 1, argv[(4 * n) + (2 * i)],
-			argv[(6 * n) + (2 * i)]);
+		printf("#%d %d => ???? <= %d\n", i + 1, argv[(4 * n) + (2 * i)] - 48,
+			argv[(6 * n) + (2 * i)] - 48);
 		printf("\n");
 		i++;
 	}
