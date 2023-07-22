@@ -32,7 +32,7 @@ int	main(int argc, char *argv[])
 {
 	int	amount;
 	int	*ptr_amount;
-	int cond_arr[];
+	int cond_arr[2];
 	int	n;
 	int	i;
 
