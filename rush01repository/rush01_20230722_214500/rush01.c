@@ -57,6 +57,7 @@
 
 void	itrate_lft_to_rght_lne(int n, char *argv);
 void	filter_candidates(int i, int *ptr_canddte_amount);
+void	collect_candidates(int i, int **ptr_arr_arr);
 
 int main(int argc, char *argv[])
 {
@@ -73,7 +74,7 @@ void	itrate_lft_to_rght_lne(int n, char *argv)
 	int *arr_arr_size;
 	int candidate_amount;
 	int	*arr_arr;
-	int **ptr_arr_arr;
+	// int **ptr_arr_arr;
 	int i;
 
 	arr_arr_size = (int *)malloc(n * sizeof(int));
@@ -82,7 +83,8 @@ void	itrate_lft_to_rght_lne(int n, char *argv)
 	{
 		filter_candidates(i, &candidate_amount);
 		arr_arr = (int *)malloc(candidate_amount * sizeof(int));
-		ptr_arr_arr = &arr_arr;
+		// ptr_arr_arr = &arr_arr;
+		collect_candidates(i, int &arr_arr);
 		arr_arr_size[i] = candidate_amount;
 		printf("#%d %d => ???? <= %d\n", i, argv[(4 * n) + (2 * i)] - 48,
 			argv[(6 * n) + (2 * i)] - 48);
@@ -100,6 +102,22 @@ void	itrate_lft_to_rght_lne(int n, char *argv)
 
 void	filter_candidates(int i, int *ptr_canddte_amount)
 {
+	// int _i;
+	int candidacy_volume[4] = { 3, 5, 2, 7 };
+	// int candidacy_array[17] = { 3, 9, 27, 5, 25, 125, 625, 3125, 2, 4, 7, 49,
+	// 	343, 2401, 16807, 117649, 823543 };
+	// _i = 0;
+	// while (_i < 17)
+	// {
+	// 	if (candidacy_array[_i] % candidacy_volume[i] == 0)
+	// 		printf("%d\n", candidacy_array[_i]);
+	// 	_i++;
+	// }
+	*ptr_canddte_amount = candidacy_volume[i];
+}
+
+void	collect_candidates(int i, int **ptr_arr_arr)
+{
 	int _i;
 	int candidacy_volume[4] = { 3, 5, 2, 7 };
 	int candidacy_array[17] = { 3, 9, 27, 5, 25, 125, 625, 3125, 2, 4, 7, 49,
@@ -111,5 +129,4 @@ void	filter_candidates(int i, int *ptr_canddte_amount)
 			printf("%d\n", candidacy_array[_i]);
 		_i++;
 	}
-	*ptr_canddte_amount = candidacy_volume[i];
 }
