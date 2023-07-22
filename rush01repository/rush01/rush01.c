@@ -23,7 +23,7 @@
 #include <stdlib.h>
 
 int		permutation_amount(int n);
-void	permutation_iteration(int n, int formation_number);
+void	permutation_iteration(int n, int formation_number, int lft, int rght);
 void	index_to_placement_conversion(int *val_arr, int n, int i);
 int		*fill_up_value_options(int n);
 void	remove_and_shift(int arr[], int size, int index_to_remove);
@@ -48,7 +48,8 @@ int	main(int argc, char *argv[])
 		{
 			printf("%c => ... <= %c\n", argv[1][((n * 2) + i) * 2],
 				argv[1][((n * 3) + i) * 2]);
-			permutation_iteration(n, permutation_amount(n));
+			permutation_iteration(n, permutation_amount(n),
+				argv[1][((n * 2) + i) * 2], argv[1][((n * 3) + i) * 2]);
 			printf("\n");
 			i++;
 		}
@@ -69,7 +70,7 @@ int	permutation_amount(int n)
 	return (amount);
 }
 
-void	permutation_iteration(int n, int formation_number)
+void	permutation_iteration(int n, int formation_number, int lft, int rght)
 {
 	int	*val_arr;
 	int	i;
@@ -78,10 +79,14 @@ void	permutation_iteration(int n, int formation_number)
 	i = 0;
 	while (i < formation_number)
 	{
-		index_to_placement_conversion(val_arr, n, i);
-		prmttion_mmber_itration(val_arr, n);
-		bckwrd_prmttion_mmber_itration(val_arr, n);
-		printf("\n");
+		if ((left == prmttion_mmber_itration(val_arr, n))
+			&& (rght == bckwrd_prmttion_mmber_itration(val_arr, n)))
+		{
+			index_to_placement_conversion(val_arr, n, i);
+			prmttion_mmber_itration(val_arr, n);
+			bckwrd_prmttion_mmber_itration(val_arr, n);
+			printf("\n");
+		}
 		i++;
 	}
 }
