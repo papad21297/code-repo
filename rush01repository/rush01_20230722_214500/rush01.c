@@ -126,7 +126,7 @@ void	collect_candidates(int i, int **ptr_arr_arr)
 	while (_i < 17)
 	{
 		if (candidacy_array[_i] % candidacy_volume[i] == 0)
-			printf("%d\n", candidacy_array[_i]);
+			printf("candidacy_array[%d]: \"%d\"\n", _i, candidacy_array[_i]);
 		_i++;
 	}
 }
