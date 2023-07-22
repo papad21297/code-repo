@@ -1,6 +1,69 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   rush01.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: papangao <papangao@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/07/21 21:29:34 by papangao          #+#    #+#             */
+/*   Updated: 2023/07/21 21:29:34 by papangao         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 
-void rush01(void)
+int		permutation_amount(int n);
+void	permutation_iteration(int n, int formation_number);
+void	index_to_placement_conversion(int n, int i);
+
+int	main(void)
 {
-    printf("this is rush01 function!!");
+	int	n;
+
+	n = 4;
+	permutation_iteration(n, permutation_amount(n));
+}
+
+int	permutation_amount(int n)
+{
+	int	amount;
+	int	i;
+
+	amount = 1;
+	i = 0;
+	while (i < n)
+	{
+		amount *= n - i;
+		i++;
+	}
+	return (amount);
+}
+
+void	permutation_iteration(int n, int formation_number)
+{
+	int	i;
+
+	i = 0;
+	while (i < formation_number)
+	{
+		index_to_placement_conversion(n, i);
+		printf("\n");
+		i++;
+	}
+}
+
+void	index_to_placement_conversion(int n, int i)
+{
+	int	function_i;
+	int	capacity;
+
+	capacity = permutation_amount(n);
+	function_i = 0;
+	while (function_i < n)
+	{
+		capacity /= n - function_i;
+		printf("%d", (i - (i % capacity)) / capacity);
+		i %= capacity;
+		function_i++;
+	}
 }
