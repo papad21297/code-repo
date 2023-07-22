@@ -36,13 +36,19 @@ int		lnstr(const char *input);
 int	main(int argc, char *argv[])
 {
 	/*
+	permutation_iteration(n, permutation_amount(n));
 	*/
 	int	n;
+	int i;
 
+	n = 4;
+	while (i < (n * n))
+	{
+		printf("%d", argv[1][i * 2]);
+		i++;
+	}
 	if ((argc - 1) == 1)
 		printf("%s\n", argv[1]);
-	n = 4;
-	permutation_iteration(n, permutation_amount(n));
 }
 
 int	permutation_amount(int n)
