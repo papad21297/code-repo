@@ -92,6 +92,7 @@ void	itrate_lft_to_rght_lne(int n, char *argv)
 		j = 0;
 		while (j < candidate_amount)
 		{
+			arr_arr = collect_candidates(candidates_collected + j, i, arr_arr);
 			printf("j_%d, ", j);
 			j++;
 		}
@@ -160,8 +161,11 @@ int	*collect_candidates(int candidate_amount, int i, int *ptr_arr_arr)
 		{
 			// ptr_arr_arr[candidate_amount + matching_found] = candidacy_array[_i];
 			// new_arr_arr[candidate_amount + matching_found] = candidacy_array[_i];
-			printf("candidacy_array[%d]: \"%d\"\n", candidate_amount + matching_found,
-				candidacy_array[_i]);
+			if (_i == candidate_amount)
+			{
+				printf("candidacy_array[%d]: \"%d\"\n", candidate_amount + matching_found,
+					candidacy_array[_i]);
+			}
 			matching_found++;
 		}
 		_i++;
