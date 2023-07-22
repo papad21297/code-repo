@@ -56,6 +56,7 @@
 */
 
 void	itrate_lft_to_rght_lne(int n, char *argv);
+int		filter_candidates(int i);
 
 int main(int argc, char *argv[])
 {
@@ -70,14 +71,15 @@ int main(int argc, char *argv[])
 void	itrate_lft_to_rght_lne(int n, char *argv)
 {
 	int *arr_arr_size;
-	int candidacy_volume[4] = { 3, 5, 2, 7 };
+	int	*arr_arr;
 	int i;
 
 	arr_arr_size = (int *)malloc(n * sizeof(int));
 	i = 0;
 	while (i < n)
 	{
-		arr_arr_size[i] = candidacy_volume[i];
+		arr_arr = (int *)malloc(candidacy_volume[i] * sizeof(int));
+		arr_arr_size[i] = filter_candidates(i);
 		printf("#%d %d => ???? <= %d\n", candidacy_volume[i], argv[(4 * n) + (2 * i)] - 48,
 			argv[(6 * n) + (2 * i)] - 48);
 		printf("\n");
@@ -90,4 +92,13 @@ void	itrate_lft_to_rght_lne(int n, char *argv)
 		printf("- %d\n", arr_arr_size[i]);
 		i++;
 	}
+}
+
+int		filter_candidates(int i)
+{
+	int candidacy_volume[4] = { 3, 5, 2, 7 };
+	int candidacy_array[17] = { 3, 9, 27, 5, 25, 125, 625, 3125, 2, 4, 7, 49,
+		343, 2401, 16807, 117649, 823543 };
+	return (candidacy_volume[i]);
+
 }
