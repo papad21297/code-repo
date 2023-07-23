@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 
 void solve_puzzle(void);
 
