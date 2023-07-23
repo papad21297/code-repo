@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-solve_puzzle(char *input);
+void solve_puzzle(char *input);
 
 int main(int argc, char *argv[])
 {
@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     return (0);
 }
 
-solve_puzzle(char *input)
+void solve_puzzle(char *input)
 {
     printf("your input: \"%s\"", input);
 }
