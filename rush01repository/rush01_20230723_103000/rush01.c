@@ -14,14 +14,14 @@ int main(int argc, char *argv[])
     }
     else
     {
-        printf("error...");
+        printf("error... %d", input, count_input_length(argv[1]));
     }
     return (0);
 }
 
 void solve_puzzle(char *input)
 {
-    printf("your input: \"%s\" %d", input, count_input_length(argv[1]));
+    printf("your input: \"%s\"");
 }
 
 int    count_input_length(char *input)
