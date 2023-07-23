@@ -10,6 +10,30 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+#include <stdio.h>
+
+void	solve_puzzle(int n, char *argv);
+void	get_horizontal_condition_array(int _i,
+			int horizontal_condition_array[2], char *argv);
+int		get_arrangement_candidates_amount(int n,
+			int horizontal_condition_array[2]);
+int		get_total_arrangement_amount(int n);
+void	display_arrangement_items(int *val_arr, int _i, int n);
+int		*fill_up_value_options(int n);
+void	remove_and_shift(int arr[], int size, int index_to_remove);
+void	browse_int_array(int arr[], int n);
+int		prmttion_mmber_itration(int arr[], int size);
+int		bckwrd_prmttion_mmber_itration(int arr[], int size);
+int		get_total_possibility_amount_array_permutation_amount(
+			int *possibility_amount_array, int n);
+void	display_possibility_grouping(int *possibility_amount_array, int amount,
+			int n, char *argv);
+void	display_group_member(int integer_information_array[3],
+			int *possibility_amount_array, char *argv);
+int		get_matching_arrangement_candidates(int _i, int n,
+			int horizontal_condition_array[2]);
+
 void	display_arrangement_items(int *val_arr, int _i, int n)
 {
 	int	*val_options_arr;
