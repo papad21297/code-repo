@@ -37,5 +37,6 @@ void render_each_horizintal_row(int n, char *input)
     {
         printf("%d => X X X X <= %d\n", input[(4 * n) + (2 * i)] - 48,
             input[(6 * n) + (2 * i)] - 48);
+        i++;
     }
 }
