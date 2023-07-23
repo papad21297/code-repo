@@ -7,7 +7,10 @@ void render_each_horizintal_row(int n, char *input);
 int main(int argc, char *argv[])
 {
     if (argc == 2)
+    {
+        printf("received input: \"%s\"\n", argv[1]);
         solve_puzzle(argv[1]);
+    }
     else
         write(1, "invalid amount of input(s)", 26);
     return (0);
