@@ -23,7 +23,7 @@ void solve_puzzle(char *input)
     i = 0;
     while (i < n)
     {
-        render_each_horizintal_row("%d\n", input);
+        render_each_horizintal_row(n, input);
         i++;
     }
 }
@@ -35,7 +35,7 @@ void render_each_horizintal_row(int n, char *input)
     i = 0;
     while (i < n)
     {
-        printf("%d => X X X X <= %d\n", input[(4 * n) + (2 * i)],
-            input[(6 * n) + (2 * i)]);
+        printf("%d => X X X X <= %d\n", input[(4 * n) + (2 * i)] - 48,
+            input[(6 * n) + (2 * i)] - 48);
     }
 }
