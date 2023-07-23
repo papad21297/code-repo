@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
     int n;
 
     n = 4;
-    if ((argc == 2) && (count_input_length(argv[1]) == (2 * (n * 4)) - 1))
+    if ((argc == 2) && (count_input_length(argv[1]) == (2 * (n * n)) - 1))
     {
         solve_puzzle(argv[1]);
     }
@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 
 void solve_puzzle(char *input)
 {
-    printf("your input: \"%s\"", input);
+    printf("your input: \"%s\" %d", input, count_input_length(argv[1]));
 }
 
 int    count_input_length(char *input)
