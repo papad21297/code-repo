@@ -3,6 +3,6 @@
 
 int main(int argc, char *argv[])
 {
-   printf("01234");
+   printf("%d", argc);
    return (0);
 }
