@@ -18,7 +18,7 @@ void solve_puzzle(void)
     int n;
     int i;
 
-    n = 4
+    n = 4;
     i = 0;
     while (i < n)
     {
