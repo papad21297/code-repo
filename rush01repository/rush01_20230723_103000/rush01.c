@@ -29,6 +29,7 @@ int    count_input_length(char *input)
     int length;
     int i;
 
+    length = 0;
     i = 0;
     while (input[i] != '\0')
     {
