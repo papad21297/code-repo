@@ -58,7 +58,7 @@ int	main(int argc, char *argv[])
 		}
 	}
 }
-
+// 
 int	permutation_amount(int n)
 {
 	int	amount;
