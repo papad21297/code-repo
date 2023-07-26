@@ -4,7 +4,7 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:\\cygwin64\\usr\\include\\**"
+                "C:\\Cygwin\\usr\\include\\**"
             ],
             "defines": [
                 "_DEBUG",

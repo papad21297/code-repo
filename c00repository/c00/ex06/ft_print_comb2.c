@@ -22,7 +22,7 @@ void	ft_print_comb2(void)
 
 void	print_comb2_digit_1(int n)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < n)
@@ -34,8 +34,8 @@ void	print_comb2_digit_1(int n)
 
 void	print_comb2_digit_2(int _i, int n)
 {
-	char c[5];
-	int i;
+	char	c[5];
+	int		i;
 
 	i = 0;
 	while (i < n)

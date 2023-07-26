@@ -13,6 +13,8 @@ void ft_print_numbers(void);
 void ft_is_negative(int n);
 void ft_print_comb(void);
 void ft_print_comb2(void);
+void ft_putnbr(int nb);
+void ft_print_combn(int n);
 
 int main(void)
 {
@@ -51,11 +53,25 @@ int main(void)
     printf("\\n\n");
     printf("\n");
     printf("========================================== ex05/ft_print_comb.c\n");
-    ft_print_comb();
+    // ft_print_comb();
     printf("\\n\n");
     printf("\n");
     printf("========================================= ex06/ft_print_comb2.c\n");
-    ft_print_comb2();
+    // ft_print_comb2();
+    printf("\\n\n");
+    printf("\n");
+    printf("============================================== ex07/ft_putnbr.c\n");
+    ft_putnbr(-789);
+    printf("\\n\n");
+    ft_putnbr(456);
+    printf("\\n\n");
+    ft_putnbr(-0);
+    printf("\\n\n");
+    ft_putnbr(-123);
+    printf("\\n\n");
+    printf("\n");
+    printf("========================================= ex08/ft_print_combn.c\n");
+    ft_print_combn(3);
     printf("\\n\n");
     printf("\n");
     return (0);
