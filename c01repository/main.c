@@ -5,6 +5,8 @@ void	ft_ultimate_ft(int *********nbr);
 void	ft_swap(int *a, int *b);
 void	ft_div_mod(int a, int b, int *div, int *mod);
 void	ft_ultimate_div_mod(int *a, int *b);
+void	ft_putstr(char *str);
+int		ft_strlen(char *str);
 
 int main(void)
 {
@@ -39,6 +41,10 @@ int main(void)
 	int ultimate_div_mod_b;
 	int *ptr_ultimate_div_mod_a;
 	int *ptr_ultimate_div_mod_b;
+	// ======================================================== ex05/ft_putstr.c
+	char *str;
+	// ======================================================== ex06/ft_strlen.c
+	char *strlen_str;
 
 	// ============================================================ ex00/ft_ft.c
 	ptr_number = &number;
@@ -71,6 +77,10 @@ int main(void)
 	ultimate_div_mod_b = 5;
 	ptr_ultimate_div_mod_a = &ultimate_div_mod_a;
 	ptr_ultimate_div_mod_b = &ultimate_div_mod_b;
+	// ======================================================== ex05/ft_putstr.c
+	str = "Hi, There!";
+	// ======================================================== ex06/ft_strlen.c
+	strlen_str = "abcdefg";
 	// ================================================================= testing
 	printf("================================================== ex00/ft_ft.c\n");
 	ft_ft(ptr_number);
@@ -98,6 +108,15 @@ int main(void)
 	printf("==================================== ex04/ft_ultimate_div_mod.c\n");
 	ft_ultimate_div_mod(ptr_ultimate_div_mod_a, ptr_ultimate_div_mod_b);
 	printf("a: \"%d\", b: \"%d\"", ultimate_div_mod_a, ultimate_div_mod_b);
+	printf("\\n\n");
+	printf("\n");
+	printf("============================================== ex05/ft_putstr.c\n");
+	ft_putstr(str);
+	printf("\\n\n");
+	printf("\n");
+	printf("============================================== ex05/ft_putstr.c\n");
+	printf("strlen_str's value: \"%s\", and its length is: \"%d\"", strlen_str,
+		ft_strlen(strlen_str));
 	printf("\\n\n");
 	printf("\n");
 	return (0);
