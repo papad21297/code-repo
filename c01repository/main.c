@@ -100,4 +100,5 @@ int main(void)
 	printf("a: \"%d\", b: \"%d\"", ultimate_div_mod_a, ultimate_div_mod_b);
 	printf("\\n\n");
 	printf("\n");
+	return (0);
 }
