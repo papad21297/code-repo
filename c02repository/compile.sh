@@ -33,5 +33,8 @@ mkdir c02/ex02&&touch c02/ex12/ft_print_memory.c;
 clear;
 cc -Wall -Wextra -Werror main.c \
 	c02/ex00/ft_strcpy.c \
+	c02/ex01/ft_strncpy.c \
+	c02/ex02/ft_str_is_alpha.c \
+	c02/ex03/ft_str_is_numeric.c \
 	-o main.out;
 ./main.out
