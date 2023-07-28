@@ -6,7 +6,7 @@
 /*   By: papangao <papangao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 16:47:40 by papangao          #+#    #+#             */
-/*   Updated: 2023/07/27 16:49:34 by papangao         ###   ########.fr       */
+/*   Updated: 2023/07/28 14:05:41 by papangao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_putstr(char *str)
 {
-	char c;
-	int i;
+	char	c;
+	int		i;
 
 	i = 0;
 	while (str[i])

@@ -30,5 +30,6 @@ cc -Wall -Wextra -Werror main.c \
 	c01/ex04/ft_ultimate_div_mod.c \
 	c01/ex05/ft_putstr.c \
 	c01/ex06/ft_strlen.c \
+	c01/ex07/ft_rev_int_tab.c \
 	-o main.out;
 ./main.out
