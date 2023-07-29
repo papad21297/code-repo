@@ -6,47 +6,30 @@
 /*   By: papangao <papangao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/29 12:28:15 by papangao          #+#    #+#             */
-/*   Updated: 2023/07/29 13:02:32 by papangao         ###   ########.fr       */
+/*   Updated: 2023/07/29 15:10:57 by papangao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strcapitalize(char *str)
 {
-	int	i;
+	int		i;
+	int		next;
+	char	c;
 
+	next = 1;
 	i = 0;
-	while (str[i])
+	while (*(str + i) != '\0')
 	{
-		if (
-			(str[i] >= 'A') && (str[i] <= 'Z')
-		)
-		{
-			if (
-				(i == 0)
-				|| !(
-					(str[i - 1] >= 'a') && (str[i - 1] <= 'z')
-				)
-			)
-				str[i] += 32;
-		}
-		else if (
-			(str[i] >= 'a') && (str[i] <= 'z')
-		)
-		{
-			if (
-				(i == 0)
-				|| ((!(
-					(str[i - 1] >= 'a') && (str[i - 1] <= 'z')
-				)
-				|| !(
-					(str[i - 1] >= 'A') && (str[i - 1] <= 'Z')
-				))
-				|| !(
-					(str[i - 1] >= '0') && (str[i - 1] <= '9')
-				))
-			)
-				str[i] -= 32;
-		}
+		c = *(str + i);
+		if ((next == 1) && ((c >= 'a') && (c <= 'z')))
+			str[i] -= 32;
+		else if ((next == 0) && ((c >= 'A') && (c <= 'Z')))
+			str[i] += 32;
+		if ((c < '0') || ((c > '9') && (c < 'A')) || ((c > 'Z') && (c < 'a'))
+			|| (c > 122))
+			next = 1;
+		else
+			next = 0;
 		i++;
 	}
 	return (str);
