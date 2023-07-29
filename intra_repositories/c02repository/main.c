@@ -1,16 +1,18 @@
 #include <stdio.h>
 #include <string.h>
 
-char	*ft_strcpy(char *dest, char *src);
-char	*ft_strncpy(char *dest, char *src, unsigned int n);
-int		ft_str_is_alpha(char *str);
-int		ft_str_is_numeric(char *str);
-int		ft_str_is_lowercase(char *str);
-int		ft_str_is_uppercase(char *str);
-int		ft_str_is_printable(char *str);
-char	*ft_strupcase(char *str);
-char	*ft_strlowcase(char *str);
-char	*ft_strcapitalize(char *str);
+char			*ft_strcpy(char *dest, char *src);
+char			*ft_strncpy(char *dest, char *src, unsigned int n);
+int				ft_str_is_alpha(char *str);
+int				ft_str_is_numeric(char *str);
+int				ft_str_is_lowercase(char *str);
+int				ft_str_is_uppercase(char *str);
+int				ft_str_is_printable(char *str);
+char			*ft_strupcase(char *str);
+char			*ft_strlowcase(char *str);
+char			*ft_strcapitalize(char *str);
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
+void			ft_put_str_non_printable(char *str);
 
 int main(void)
 {
@@ -57,7 +59,12 @@ int main(void)
 	char strcapitalize_str2[20];
 	char strcapitalize_str3[20];
 	// ========================================================= 10/ft_strlcpy.c
+	char	*strlcpy_src;
+	int		strlcpy_size;
+	char	strlcpy_dest[50];
 	// =========================================== 11/ft_put_str_non_printable.c
+	char	*put_str_non_printable_str;
+	// int		put_str_non_printable_i;
 	// ==================================================== 12/ft_print_memory.c
 
 	// ========================================================== 00/ft_strcpy.c
@@ -101,7 +108,11 @@ int main(void)
 	strcpy(strcapitalize_str2, "HELLO world");
 	strcpy(strcapitalize_str3, "    123test test");
 	// ========================================================= 10/ft_strlcpy.c
+	strlcpy_src = "this is just a test you seeeee";
+	strlcpy_size = 10;
 	// =========================================== 11/ft_put_str_non_printable.c
+	put_str_non_printable_str = "Hello	Th-\nere";
+	// put_str_non_printable_i = -127;
 	// ==================================================== 12/ft_print_memory.c
 	// ================================================================= testing
 
@@ -241,12 +252,21 @@ int main(void)
 	printf("Capitalized string 3: \"%s\"", strcapitalize_str3);
 	printf("\\n\n");
 	printf("\n");
-	// printf("=============================================== 10/ft_strlcpy.c\n");
-	// printf("\\n\n");
-	// printf("\n");
-	// printf("================================= 11/ft_put_str_non_printable.c\n");
-	// printf("\\n\n");
-	// printf("\n");
+	printf("=============================================== 10/ft_strlcpy.c\n");
+	printf("%d", ft_strlcpy(strlcpy_dest, strlcpy_src, strlcpy_size));
+	printf("\\n\n");
+	printf("\"%s\"", strlcpy_dest);
+	printf("\\n\n");
+	printf("\\n\n");
+	printf("%lu", strlcpy(strlcpy_dest, strlcpy_src, strlcpy_size));
+	printf("\\n\n");
+	printf("\"%s\"", strlcpy_dest);
+	printf("\\n\n");
+	printf("\n");
+	printf("================================= 11/ft_put_str_non_printable.c\n");
+	ft_put_str_non_printable(put_str_non_printable_str);
+	printf("\\n\n");
+	printf("\n");
 	// printf("========================================== 12/ft_print_memory.c\n");
 	// printf("\\n\n");
 	return (0);

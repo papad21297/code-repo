@@ -6,7 +6,7 @@
 /*   By: papangao <papangao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/28 17:58:23 by papangao          #+#    #+#             */
-/*   Updated: 2023/07/28 17:58:23 by papangao         ###   ########.fr       */
+/*   Updated: 2023/07/29 15:14:07 by papangao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_str_is_alpha(char *str)
 	{
 		current_char = str[i];
 		if (!(((current_char >= 'A') && (current_char <= 'Z')) || ((
-			current_char >= 'a') && (current_char <= 'z'))))
+						current_char >= 'a') && (current_char <= 'z'))))
 		{
 			return (0);
 		}
