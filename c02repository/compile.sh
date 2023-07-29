@@ -40,5 +40,7 @@ cc -Wall -Wextra -Werror main.c \
 	c02/ex05/ft_str_is_uppercase.c \
 	c02/ex06/ft_str_is_printable.c \
 	c02/ex07/ft_strupcase.c \
+	c02/ex08/ft_strlowcase.c \
+	c02/ex09/ft_strcapitalize.c \
 	-o main.out;
 ./main.out

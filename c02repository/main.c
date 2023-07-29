@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 char	*ft_strcpy(char *dest, char *src);
 char	*ft_strncpy(char *dest, char *src, unsigned int n);
@@ -8,6 +9,8 @@ int		ft_str_is_lowercase(char *str);
 int		ft_str_is_uppercase(char *str);
 int		ft_str_is_printable(char *str);
 char	*ft_strupcase(char *str);
+char	*ft_strlowcase(char *str);
+char	*ft_strcapitalize(char *str);
 
 int main(void)
 {
@@ -42,8 +45,17 @@ int main(void)
 	char	*is_printable_str2;
 	char	*is_printable_str3;
 	// ======================================================= 07/ft_strupcase.c
+	char strupcase_test_str1[20];
+	char strupcase_test_str2[20];
+	char strupcase_test_str3[1];
 	// ====================================================== 08/ft_strlowcase.c
+	char strlowcase_test1[20];
+	char strlowcase_test2[20];
+	char strlowcase_test3[1];
 	// =================================================== 09/ft_strcapitalize.c
+	char strcapitalize_str1[80];
+	char strcapitalize_str2[20];
+	char strcapitalize_str3[20];
 	// ========================================================= 10/ft_strlcpy.c
 	// =========================================== 11/ft_put_str_non_printable.c
 	// ==================================================== 12/ft_print_memory.c
@@ -76,8 +88,18 @@ int main(void)
 	is_printable_str2 = "Testing\tnewline";
 	is_printable_str3 = "Testing with special character: -";
 	// ======================================================= 07/ft_strupcase.c
+	strcpy(strupcase_test_str1, "Hello, World!");
+	strcpy(strupcase_test_str2, "This is a Test 123");
+	strcpy(strupcase_test_str3, "");
 	// ====================================================== 08/ft_strlowcase.c
+	strcpy(strlowcase_test1, "Hello, World!");
+	strcpy(strlowcase_test2, "This is a TEST");
+	strcpy(strlowcase_test3, "");
 	// =================================================== 09/ft_strcapitalize.c
+	strcpy(strcapitalize_str1,
+		"salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un");
+	strcpy(strcapitalize_str2, "HELLO world");
+	strcpy(strcapitalize_str3, "    123test test");
 	// ========================================================= 10/ft_strlcpy.c
 	// =========================================== 11/ft_put_str_non_printable.c
 	// ==================================================== 12/ft_print_memory.c
@@ -171,15 +193,54 @@ int main(void)
 		printf("str3 is not printable.");
 	printf("\\n\n");
 	printf("\n");
-	// printf("============================================= 07/ft_strupcase.c\n");
-	// printf("\\n\n");
-	// printf("\n");
-	// printf("============================================ 08/ft_strlowcase.c\n");
-	// printf("\\n\n");
-	// printf("\n");
-	// printf("========================================= 09/ft_strcapitalize.c\n");
-	// printf("\\n\n");
-	// printf("\n");
+	printf("============================================= 07/ft_strupcase.c\n");
+	printf("Original string \"%s\"", strupcase_test_str1);
+	printf("\\n\n");
+	ft_strupcase(strupcase_test_str1);
+	printf("Uppercase string: \"%s\"", strupcase_test_str1);
+	printf("\\n\n");
+	printf("Original string \"%s\"", strupcase_test_str2);
+	printf("\\n\n");
+	ft_strupcase(strupcase_test_str2);
+	printf("Uppercase string: \"%s\"", strupcase_test_str2);
+	printf("\\n\n");
+	printf("Original string \"%s\"", strupcase_test_str3);
+	printf("\\n\n");
+	ft_strupcase(strupcase_test_str3);
+	printf("Uppercase string: \"%s\"", strupcase_test_str3);
+	printf("\\n\n");
+	printf("\n");
+	printf("============================================ 08/ft_strlowcase.c\n");
+	printf("Original string 1: \"%s\"", strlowcase_test1);
+	printf("\\n\n");
+	printf("After strlowcase: \"%s\"", ft_strlowcase(strlowcase_test1));
+	printf("\\n\n");
+	printf("Original string 2: \"%s\"", strlowcase_test2);
+	printf("\\n\n");
+	printf("After strlowcase: \"%s\"", ft_strlowcase(strlowcase_test2));
+	printf("\\n\n");
+	printf("Original string 3: \"%s\"", strlowcase_test3);
+	printf("\\n\n");
+	printf("After strlowcase: \"%s\"", ft_strlowcase(strlowcase_test3));
+	printf("\\n\n");
+	printf("\n");
+	printf("========================================= 09/ft_strcapitalize.c\n");
+	printf("Original string 1: \"%s\"", strcapitalize_str1);
+	printf("\\n\n");
+	ft_strcapitalize(strcapitalize_str1);
+	printf("Capitalized string 1: \"%s\"", strcapitalize_str1);
+	printf("\\n\n");
+	printf("Original string 2: \"%s\"", strcapitalize_str2);
+	printf("\\n\n");
+	ft_strcapitalize(strcapitalize_str2);
+	printf("Capitalized string 2: \"%s\"", strcapitalize_str2);
+	printf("\\n\n");
+	printf("Original string 3: \"%s\"", strcapitalize_str3);
+	printf("\\n\n");
+	ft_strcapitalize(strcapitalize_str3);
+	printf("Capitalized string 3: \"%s\"", strcapitalize_str3);
+	printf("\\n\n");
+	printf("\n");
 	// printf("=============================================== 10/ft_strlcpy.c\n");
 	// printf("\\n\n");
 	// printf("\n");
