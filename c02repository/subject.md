@@ -1,5 +1,5 @@
 ## Files to turn in
-`ft_str_is_numeric.c`
+`ft_str_is_printable.c`
 
 ---
 
@@ -8,7 +8,7 @@
 
 ---
 
-- Create a function that returns 1 if the string given as a parameter contains only digits, and 0 if it contains any other character.
+- Create a function that returns 1 if the string given as a parameter contains only printable characters, and 0 if it contains any other character.
 - for loop is forbidden, so use while loop instead
 - variable declaration and its value assigning should be done on separate line (like
 
@@ -27,10 +27,10 @@ i = 0;
 - Here's how it should be prototyped:
 
 ```c
-	int		ft_str_is_numeric(char *str);
+	int		ft_str_is_printable(char *str);
 ```
 - It should return 1 if `str` is empty
 
 ---
 
-write C code in the file ft_str_is_alpha.c and another one for main.c to test the function `ft_str_is_alpha`
+write C code in the file ft_str_is_printable.c and another one for main.c to test the function `ft_str_is_printable`

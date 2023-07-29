@@ -36,5 +36,9 @@ cc -Wall -Wextra -Werror main.c \
 	c02/ex01/ft_strncpy.c \
 	c02/ex02/ft_str_is_alpha.c \
 	c02/ex03/ft_str_is_numeric.c \
+	c02/ex04/ft_str_is_lowercase.c \
+	c02/ex05/ft_str_is_uppercase.c \
+	c02/ex06/ft_str_is_printable.c \
+	c02/ex07/ft_strupcase.c \
 	-o main.out;
 ./main.out
