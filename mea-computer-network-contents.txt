@@ -1,0 +1,34 @@
+One: C.S. dash G.W. opening parentheses one hundred and twenty-eight dot one hundred and nineteen dot two hundred and forty dot two hundred and fifty four closing parentheses one millisecond one millisecond two millisecond
+Two: border one dash R.T. dash F.A. five dash one dash zero dot G.W. dot U. mass dot E.D.U. opening parentheses one hundred twenty eight dot one hundred and nineteen dot three dot one hundred forty-five closing parentheses closing parentheses one millisecond one millisecond two millisecond
+Three: C.H.T. dash V.B.N.S. dot G.W. dot U. mass dot E.D.U. opening parentheses one hundred and twenty eight dot one hundred and nineteen dot three dot one hundred and thirty closing parentheses six millisecond five millisecond five millisecond
+Four: J.N. one dash at one dash zero dash zero dash nineteen dot W.O.R. dot V.B.N.S. dot net opening parentheses two hundred and four dot one hundred and forty-seven dot one hundred thirty-two dot one hundred and twenty-nine closing parentheses sixteen millisecond eleven millisecond thirteen millisecond
+Five: J.N. one dash so seven dash zero dash zero dash zero dot W.A.E. dot V.B.N.S. dot net opening parentheses two hundred and four dot one hundred and forty seven dot one hundred and thirty-six dot one hundred and thirty six closing parentheses twenty-one millisecond eighteen second eighteen second
+Six: abilene dash V.B.N.S. dot abilene dot U.C.A.I.D. dot E.D.U. opening parentheses one hundred and ninety-eight dot thirty-two dot eleven dot nine closing parentheses twenty-two millisecond eighteen millisecond twenty-two millisecond
+Seven: N.Y.C.M. dash wash dot abilene dot U.C.A.I.D. dot E.D.U. opening parentheses one hundred and ninety-eight dot thirty-two dot eleven dot nine closing parentheses twenty-two millisecond twenty-two millisecond twenty-two millisecond
+Eight: sixty-two dot forty dot one hundred O. three dot two hundred and fifty-three opening parentheses sixty two dot forty dot one hundred O. three closing parentheses one hundred O. four millisecond one hundred O. nine millisecond one hundred O. six second millisecond
+Nine: D.E. two dash one dot D.E. one dot D.E. dot G.E. ant dot net opening parentheses sixty-two dot forty dot ninety-six dot one hundred and twenty nine closing parentheses one hundred O. nine millisecond one hundred O. two millisecond one hundred O. four millisecond
+Ten: D.E. dot F.R. one dot F.R. dot G.E. ant dot net opening parentheses sixty-two dot forty dot ninety-six dot fifty closing parentheses one hundred and thirteen millisecond millisecond one hundred and twenty-one millisecond one hundred and fourteen millisecond
+Eleven: R.E.N.A.T.E.R. dash G.W. dot F.R. one dot F.R. G.E. ant dot net opening parentheses sixty-two dot forty dot one hundred and three dot fifty four closing parentheses one hundred and twelve millisecond one hundred and fourteen millisecond one hundred and twelve second
+Twelve: N.I.O. dash N. two dot C.S.S.I. dot R.E.N.A.T.E.R. for opening parentheses one hundred and ninety-three dot fifty-one dot two hundred O. six dot thirteen closing parentheses one hundred and eleven millisecond one hundred and fourteen millisecond one hundred and sixteen millisecond
+Thirteen: nice dot C.S.S.I. dot R.E.N.A.T.E.R. dot F.R. opening parentheses one hundred and ninety-five dot two hundred and twenty dot ninety-eight dot one hundred O. two closing parentheses one hundred and twenty-three millisecond one hundred and twenty-five second one hundred and twenty-four millisecond
+Forteen: R. three T. two dash nice dot C.S.S.I. dot renater dot F.R. opening parentheses one hundred and ninety-five dot two hundred and twenty dot ninety-eight dot one hundred and ten closing parentheses one hundred and twenty-six millisecond one hundred and twenty-six millisecond one hundred and twenty-four millisecond
+Fifteen: E.U.R.E. com dash V.A.L.B.O.N.N.E. dot R.three T. two dot F.T. dot net opening parentheses dot forty-eight dot fifty dot fifty-four closing parentheses one hundred and thirty-five millisecond one hundred and twenty-eight millisecond one hundred and thirty-three millisecond
+Sixteen: one hundred and ninety-four dot two hundred and fourteen dot two hundred and eleven dot twenty-five opening parentheses one hundred and ninety-four dot two hundred and fourteen dot two hundred and eleven dot twenty-five closing parentheses one hundred and twenty-six millisecond one hundred and twenty-eight millisecond one hundred and twenty-six millisecond
+Seventeen: asterisk asterisk asterisk
+Eighteen: asterisk asterisk asterisk
+Nineteen: fantasia dot E.U.R.E. com dot F.R. opening parentheses one hundred and ninety-three dot fifty-five dot one hundred and thirteen dot one hundred and forty two closing parentheses one hundred and thirty two millisecond one hundred and twenty-eight millisecond one hundred and thirty-six second
+
+
+รูปที่หนึ่งจุดหนึ่งห้า ตัวอย่างของเวลาหน่วงที่เกิดขึ้นจากการเดินทางของแพ็คเก็ต
+บนระบบเครือข่ายอินเทอร์เน็ต
+จากรูปที่หนึ่งจุดหนึ่งห้า เป็นผลลัพธ์จากโปรแกรมเถรดสึรุด ซึ่งแสดงค่าเวลาหน่วงในการเดินทางของแพ็คเก็ตผ่านเร้าเต้อ
+แต่ละตัวบนเครือข่ายอินเทอร์เน็ต การแสดงผลในแต่ละบรรทัดแสดงถึง
+ชื่อ หรือ หมายเลขไปพีของเร้าเต้อที่แพ็คเก็ตวิ่งผ่าน
+และแสดงเวลาหน่วงที่เกิดขึ้น ซึ่งเกิดจากการเดินทางของแพ็คเก็ต
+จากเครื่องคอมพิวเตอร์ที่รันโปรแกรมเถรดสึรุดไปถึงเร้าเต้อ แล้วกลับมายังเครื่องคอมพิวเตอร์ การแสดงผลจะแสดงผล ของเวลาหน่วงสามครั้งในการเดินทางไปที่เร้าเต้อตัวเดียวกัน
+ซึ่งเบื้องต้นจะเห็นว่าเวลาหน่วงที่เกิดขึ้น อาจจะมีค่าไม่เท่ากันได้สาเหตุสำคัญก็คือผลการรอคิว
+ถ้าพิจารณาตามหลักการส่งข้อมูลสถานะเครือข่ายแพ็คเก็ตสวิตช์ จะเห็นว่า ระยะทางที่ไกลขึ้น (ผ่านเร้าเต้อมากขึ้น) จะต้องใช้เวลาที่มากขึ้น แต่ผลการทำงาน จะมีบางส่วนที่แสดงว่า
+ระยะทางที่ใกล้กว่า ก็อาจจะใช้เวลาที่มากกว่าได้ เช่น บรรทัดที่สิบใช้เวลามากกว่าบรรทัดที่สิบเอ็ด หรือบรรทัดที่สิบห้า ใช้เวลามากกว่าบรรทัดที่สิบหก สาเหตุสำคัญที่ทำให้เกิดสภาวะแบบนี้คือ
+ผลจากการรอคิวเช่นกัน เนื่องจากว่าการทำงานในช่วงเวลาของบรรทัดที่สิบ เร้าเต้อระหว่างทางอาจมีคิวที่มาก ทำให้แพ็คเก็ตต้องใช้เวลารอคิวนานกว่าปกติ จึงทำให้เกิดผลเช่นนี้
+อีกกรณีหนึ่งที่น่าสนใจคือ บรรทัดที่สิบเจ็ด และบรรทัดที่สิบแปด มีการใช้สัญลักษณ์ ดอกจัน ดอกจัน ดอกจัน เป็นการบอกว่า แพ็คเก็ตน่าจะสูญหายระหว่างทาง ซึ่งเกิดมาจากเร้าเต้อ
+ทำการทิ้งแพ็คเก็ตระหว่างทางเนื่องจากคิวของเร้าเต้อเต็ม
