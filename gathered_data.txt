@@ -70,6 +70,8 @@ C Piscine C 02, Version: 5.2, (60236, 60365, 70329, 71209, 71950, 73047, 73055, 
 
 C Piscine C 02, Version: 5.3, (88007, 88605, 88828, 89050, 90550, 90679, 91052, 92241, 92522, 92659, 92878, 93217, 93540, 93662, 93791, 93842, 93936, 93963, 94215), Summary: This document is the subject for the C 02 module of the C Piscine @ 42.
 
+C Piscine C 02, Version: 5.4, (95622), Summary: This document is the subject for the C 02 module of the C Piscine @ 42.
+
 ----------------------------------------------------------------
 
 C Piscine C 03, (10210, 10866, 11115, 11325, 11645, 12764, 14726, 16210, 16507, 17005, 17354, 17476, 17532, 18342, 20929, 21971, 22697, 22981, 23333, 25296, 27519, 28582, 28807, 29213, 29989, 31158, 33314, 48141), Summary: This document is the subject for the C 03 module of the C Piscine @ 42
