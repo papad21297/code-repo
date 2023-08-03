@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: papangao <papangao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/30 16:46:23 by papangao          #+#    #+#             */
-/*   Updated: 2023/07/30 16:58:24 by papangao         ###   ########.fr       */
+/*   Created: 2023/08/03 14:43:44 by papangao          #+#    #+#             */
+/*   Updated: 2023/08/03 14:59:20 by papangao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {

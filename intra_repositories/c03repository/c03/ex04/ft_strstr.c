@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: papangao <papangao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/30 17:03:05 by papangao          #+#    #+#             */
-/*   Updated: 2023/07/30 17:05:30 by papangao         ###   ########.fr       */
+/*   Created: 2023/08/03 15:02:50 by papangao          #+#    #+#             */
+/*   Updated: 2023/08/03 15:06:45 by papangao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strstr(char *str, char *to_find)
 	while (str[i] != '\0')
 	{
 		j = 0;
-		while (str[i + j] != '\0' && str[i + j] == to_find[j])
+		while ((str[i + j] != '\0') && (str[i + j] == to_find[j]))
 		{
 			if (to_find[j + 1] == '\0')
 				return (&str[i]);

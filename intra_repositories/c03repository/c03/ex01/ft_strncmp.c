@@ -5,23 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: papangao <papangao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/30 16:37:32 by papangao          #+#    #+#             */
-/*   Updated: 2023/07/30 16:37:36 by papangao         ###   ########.fr       */
+/*   Created: 2023/08/03 14:05:45 by papangao          #+#    #+#             */
+/*   Updated: 2023/08/03 14:22:58 by papangao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-    unsigned int	i;
+	unsigned int	i;
+	int				r;
 
 	i = 0;
-	while (((s1[i] != '\0') && (s2[i] != '\0')) && (i < n))
+	r = 0;
+	while (((s1[i] || s2[i]) && (r == 0)) && (i < n))
 	{
 		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
-		++i;
+			r = s1[i] - s2[i];
+		i++;
 	}
-	if (i != n)
-		return (s1[i] - s2[i]);
-	return (0);
+	return (r);
 }
