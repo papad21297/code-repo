@@ -139,7 +139,7 @@ function getHandScore(input: string): string {
   return score
 }
 
-let input = generateRandomCards()
+let input = generateRandomCards();
 
 document.querySelector("#app").innerHTML = (
   ''
