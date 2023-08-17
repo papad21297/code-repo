@@ -1,3 +1,5 @@
+// https://jsfiddle.net/boilerplate/typescript
+
 function generateRandomCards(): string {
   const suits: string[] = ['H', 'C', 'D', 'S'];
   const numbers: string[] = [
@@ -31,9 +33,11 @@ function getHandScore(input:string):number {
     let result_array: string[] = [];
     let splitted_input: string[] = input.split(' ');
     for (let i = 0; i < splitted_input.length; i++) {
-      result_array.push(splitted_input[i].substring(
-        1, splitted_input[i].length
-      ));
+      if (splitted_input[i].substring(0, 1) == suit) {
+        result_array.push(splitted_input[i].substring(
+          1, splitted_input[i].length
+        ));
+      }
     }
     return result_array
   }
