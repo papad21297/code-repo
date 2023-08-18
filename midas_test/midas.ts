@@ -1,4 +1,4 @@
-function getHandScore(input: string): string {
+function getHandScore(input: string): number {
   const splitInput = (input: string, suit: string): string[] => {
     let result_array: string[] = [];
     let splitted_input: string[] = input.split(' ');
@@ -71,4 +71,47 @@ function getHandScore(input: string): string {
     }
   }
   return score
+}
+
+function getClockAngle(hh_mm: string): number {
+  let splitted_hh_mm: string[] = hh_mm.split(':');
+  let raw_answer_angle: number = 0;
+  let hh: number = parseInt(splitted_hh_mm[0])
+  let mm: number = parseInt(splitted_hh_mm[1])
+  if (hh > 12) {
+    hh -= 12;
+  }
+  raw_answer_angle = Math.abs((mm * 6) - ((hh * 30) + (mm * 0.5)));
+  if (raw_answer_angle > 180) {
+    raw_answer_angle -= 180;
+  }
+  return raw_answer_angle;
+}
+
+function getQuestionPart(phrases: string[]): string[] {
+  let result_strings_array: string[] = [];
+  for (let i = 0; i < phrases.length; i++) {
+    let common_substring: string = '';
+    for (let j = 0; j < phrases[i].length; j++) {
+      for (let k = 0; k < phrases[i].length - j; k++) {
+        const sub_sub = phrases[i].substring(
+          k, (k + (j + 1))
+        );
+        if (
+          (phrases[(i + 1) % 3].indexOf(sub_sub) !== -1)
+          && (phrases[(i + 2) % 3].indexOf(sub_sub)  !== -1)
+        ) {
+          common_substring = sub_sub;
+        }
+      }
+    }
+    const extracted: string = phrases[i].substring(0, (
+      phrases[i].indexOf(common_substring)
+    )) + phrases[i].substring((
+      phrases[i].indexOf(common_substring) +
+      common_substring.length
+    ), phrases[i].length).trim()
+    result_strings_array.push(extracted);
+  }
+  return result_strings_array;
 }

@@ -25,12 +25,12 @@ function getClockAngle(hh_mm: string): number {
   return raw_answer_angle;
 }
 
-let input = getRandomTime();
+// let input = getRandomTime();
 
-document.querySelector("#app").innerHTML = (
-  ''
-  + 'input: '
-  + input
-  + '<br /> angle: '
-  + getClockAngle(input)
-);
+// document.querySelector("#app").innerHTML = (
+//   ''
+//   + 'input: '
+//   + input
+//   + '<br /> angle: '
+//   + getClockAngle(input)
+// );

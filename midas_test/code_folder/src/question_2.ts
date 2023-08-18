@@ -12,3 +12,5 @@ function getClockAngle(hh_mm: string): number {
   }
   return raw_answer_angle;
 }
+
+export {getClockAngle};
